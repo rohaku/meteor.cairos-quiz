@@ -19,16 +19,29 @@
 	overflow: hidden;
 	color: #fff;
 	font-family: 'Arial';
+	text-align: center;
 }
 .pc-container .cantent-wrap .answer-list h1{
 	line-height: 65px;
-	text-align: center;
 	font-size: 6rem;
 	font-weight: 900;
+	padding-bottom: 10px;
 }
 .pc-container .cantent-wrap .qustion-title{
 	width: 100%;
 	text-align: center;
 	font-size: 2.5rem;
 	font-weight: 900;
+}
+.pc-container .cantent-wrap ul li{
+	margin:10px auto;
+	width: 550px;
+	height: 68px;
+	line-height: 68px;
+	font-size: 2.1rem;
+	font-family: 'candelabold';
+
+}
+.pc-container .cantent-wrap ul li span{
+	padding-right: 27px;
 }
