@@ -1,0 +1,95 @@
+.pc-nav {
+	position: fixed;
+	z-index: 999;
+	right: 0%;
+	top: 40%;
+	width: 50px;
+	height: 80%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background: rgba(0,0,0,.5);
+}
+
+.pc-nav a:hover {
+	text-decoration: none;
+}
+
+.role-describe img {
+	margin-top: 66px;
+}
+.pc-container .fedeen {
+	width: 200px;
+	height: 45px;
+	display: inline-block;
+	background: url("/images/small/fedeen_icon.png") no-repeat 110px 0;
+	position: absolute;
+	top: 10px;
+	left: -100px;
+}
+.pc-container .fedeen p {
+	width: 38%;
+	text-align: right;
+	color: #fff;
+	font-size: 2rem;
+	line-height: 45px;
+	font-weight: bold;
+	display: none;
+}
+.pc-container .fedeen:hover p {
+	display: block;
+}
+.pc-container .other-share {
+	position: absolute;
+	bottom:20px;
+	left: -100px;
+	width: 200px;
+	height: 200px;
+}
+.pc-container .other-share a p {
+	width: 38%;
+	text-align: right;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 30px;
+	font-weight: bold;
+	display: none;
+	height: 30px;
+}
+.pc-container .other-share a {
+	width: 200px;
+	height: 30px;
+	display: block;
+	background: url("/images/small/share_icon.png") no-repeat;
+}
+.pc-container .other-share a.facebook {
+	background-position: 115px 4px;
+}
+.pc-container .other-share a.facebook:hover p {
+	display: block;
+}
+.pc-container .other-share a.twitter {
+	background-position: 115px -33px;
+}
+.pc-container .other-share a.twitter:hover p {
+	display: block;
+}
+.pc-container .other-share a.youtube {
+	background-position: 115px -73px;
+}
+.pc-container .other-share a.youtube:hover p {
+	display: block;
+}
+.pc-container .other-share a.forun {
+	background-position: 115px -119px;
+}
+.pc-container .other-share a.forun:hover p {
+	display: block;
+}
+.pc-container .other-share a.support {
+	background-position: 115px -158px;
+}
+.pc-container .other-share a.support:hover p {
+	display: block;
+}

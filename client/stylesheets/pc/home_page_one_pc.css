@@ -1,0 +1,16 @@
+.pc-container .cantent-wrap .home-page-title{
+	margin: 0 auto;
+	width: 576px;
+	height: 416px;
+	background: url("/images/small/first_page_title.png") no-repeat 0 0;
+}
+.pc-container .cantent-wrap .sheep-img{
+	margin: 0 auto;
+	width: 238px;
+	height: 277px;
+	background: url("/images/small/sheep.png") no-repeat 0 bottom;
+}
+.pc-container .cantent-wrap .mian-intro{
+	width: 740px;
+	margin: 100px auto 10px;
+}

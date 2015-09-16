@@ -1,10 +1,96 @@
 /* CSS declarations go here */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset,
+img {
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
 html, body{
-    margin:0px;
-    padding:0px;
     font-size:10px;
+    background-color: #000;
+    font-family: 'candelabold';
 }
 
 div{
     font-size:1.4rem;
+}
+@font-face {
+    font-family: 'candelabold';
+    src: url('common/fonts/candelabold-webfont.eot');
+    src: url('common/fonts/candelabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('common/fonts/candelabold-webfont.woff2') format('woff2'),
+         url('common/fonts/candelabold-webfont.woff') format('woff'),
+         url('common/fonts/candelabold-webfont.ttf') format('truetype'),
+         url('common/fonts/candelabold-webfont.svg#lucida_granderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.footer-box {
+	background: #000;
+	padding: 20px 0;
+	color: #B5ACB1;
+	text-align: left;
+	font-size: 1.2rem;
+	line-height: 28px;
+}
+
+.footer a {
+	color: #B5ACB1;
+}
+
+.footer p:first-child {
+	margin-bottom: 20px;
+}
+
+.footer p,
+.footer p img {
+	display: inline-block;
+}
+
+.footer p a {
+	padding: 0 6px;
+}
+
+.footer p img {
+	padding-right: 10px;
+}
+.footer div.padTop{
+	 padding-top: 6px;
+
+}
+@media(max-width:769px) {
+	.footer-box {
+		text-align: center;
+	}
+	.footer {
+		margin-left: -15px !important;
+		margin-right: -15px !important;
+	}
+
+	.footer-right {
+		margin-top: 20px;
+	}
+
 }
