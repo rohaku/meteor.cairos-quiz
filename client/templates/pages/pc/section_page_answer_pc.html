@@ -7,15 +7,23 @@
 			<div class="home-page-title"></div> 
 			<div class="sheep-img"></div>
 			<div class="qustion-nav"><h2>QUESTION</h2></div>
-			<div class="answer-content">
-				<div class="answer-list">
-					<h1>Q1</h1>
-					<div class='qustion-title'>It’s time for gym class. What are you doing?</div>
+			<form action="/result.html" method="post">
+			<div class="answer-content" id="answer">
+			<input type="hidden" value="" />
+			{{#each eachAnswer}}
+				<section class="answer-list">
+					<h1>{{name}}</h1>
+					<div class='qustion-title'>{{title}}</div>
 					<ul>
-						<li><span>A</span>Playing some team sports.</li>
+					{{#each option}}
+						<li value='{{numb}}'><span> {{opt}}</span>{{answ}}
+						</li>
+					{{/each}}
 					</ul>
-				</div>
+				</section>
+				{{/each}}
 			</div>
+			</form>
 		</div>
 	</div>
 </div>
