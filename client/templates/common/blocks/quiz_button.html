@@ -1,0 +1,8 @@
+<template name="quizButton">
+    <div id="{{#if this.btnId}}{{this.btnId}}{{/if}}" class="quiz-btn {{this.themeColor}} {{#if this.customClass}}{{this.customClass}}{{else}}default{{/if}}">
+        <div class="btn-lft"></div>
+        <div class="btn-bg"></div>
+        <div class="btn-rgt"></div>
+        <div class="btn-cont">{{#if this.buttonContent}}{{{this.buttonContent}}}{{else}}<p>DEFAULT</p>{{/if}}</div>
+    </div>
+</template>
