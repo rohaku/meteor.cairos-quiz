@@ -13,44 +13,44 @@
 .pc-container .you-got{
 margin-left: 336px;
 }
-.pc-container .result-show #heroes-img{
+.pc-container .result-show #heroesImg{
 	width: 100%;
 	height: 460px;
 	
 }
-.pc-container .result-show #heroes-img.chicken{
+.pc-container .result-show #heroesImg.chicken{
 	background: url("/images/medium/cluster_cluck.png") no-repeat center 120px;
 }
 
-.pc-container .result-show #heroes-img.duck{
+.pc-container .result-show #heroesImg.duck{
 	background: url("/images/medium/ductor_quack.png") no-repeat center top;
 }
-.pc-container .result-show #heroes-img.orangutan{
+.pc-container .result-show #heroesImg.orangutan{
 	background: url("/images/medium/jungle_jim.png") no-repeat center 80px;
 }
-.pc-container .result-show #heroes-img.frog{
+.pc-container .result-show #heroesImg.frog{
 	background: url("/images/medium/yoga_frog.png") no-repeat center 74px;
 }
-.pc-container .result-show #heroes-img.hammster{
+.pc-container .result-show #heroesImg.hammster{
 	background: url("/images/medium/hammster.png") no-repeat center 74px;
 }
-.pc-container .result-show #heroes-title{
+.pc-container .result-show #heroesTitle{
 	width: 100%;
 	height: 165px;
 }
-.pc-container .result-show #heroes-title.chicken{
+.pc-container .result-show #heroesTitle.chicken{
 	background: url("/images/small/cluster_cluck_title.png") no-repeat center top;
 }
-.pc-container .result-show #heroes-title.duck{
+.pc-container .result-show #heroesTitle.duck{
 	background: url("/images/small/ductor_quack_title.png") no-repeat center top;
 }
-.pc-container .result-show #heroes-title.orangutan{
+.pc-container .result-show #heroesTitle.orangutan{
 	background: url("/images/small/jungle_jim_title.png") no-repeat center top;
 }
-.pc-container .result-show #heroes-title.frog{
+.pc-container .result-show #heroesTitle.frog{
 	background: url("/images/small/yoga_frog_title.png") no-repeat center top;
 }
-.pc-container .result-show #heroes-title.hammster{
+.pc-container .result-show #heroesTitle.hammster{
 	background: url("/images/small/hammster_title.png") no-repeat center top;
 }
 .pc-container .result-show .heroes-intro{
