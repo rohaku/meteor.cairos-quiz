@@ -3,6 +3,6 @@
  */
 Template.HomePagePc.events({
     'click div#startQuizBtn': function(event){
-        window.location.href = "/answer.html";
+       Router.redirect('answer.do');
     }
 });

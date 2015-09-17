@@ -3,7 +3,6 @@
 	background: url("/images/medium/question_page_bg.jpg") no-repeat center top;
 }
 .pc-container .share-wrap{
-	overflow: hidden;
 	min-width: 1000px;
 	background: url("/images/medium/share_page_bg.jpg") no-repeat center top;
 }

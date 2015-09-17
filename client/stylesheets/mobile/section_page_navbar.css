@@ -1,0 +1,73 @@
+.mobile-nav {
+	background-color: transparent!important;
+	border: none!important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	 z-index: 99;
+}
+.btn-color{
+ 	background-color: rgba(0,0,0,0.8)!important;
+    border-color: #000!important;
+     padding: 25px 25px!important;
+ }
+  .btn-color span{
+  	 width: 44px!important;
+  	  height: 4px!important;
+  }
+.prev-btn{
+	background:url("images/small/prev_btn.png") no-repeat 31px 20px;
+	 width:640px;
+	 padding: 40px;
+}
+
+.down-content{
+  background-color: rgba(0,0,0,.5);
+   margin-left: -15px;
+
+}
+
+.mobile-smalls-logo{ 
+	  -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box; 
+	  -o-box-sizing: border-box;     
+	  -ms-box-sizing: border-box;     
+	  box-sizing: border-box; 
+	 width:100%; 
+	 height: auto;
+	  padding-left: 10px;
+}
+.mobile-smalls-logo a p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 30px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.mobile-smalls-logo a {
+	 -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box; 
+	  -o-box-sizing: border-box;     
+	  -ms-box-sizing: border-box;     
+	  box-sizing: border-box; 
+	 width: 19%;
+   background:url("images/small//mobile_icon.png") no-repeat;
+	 padding-top: 117px;
+  display:inline-block;
+}
+.mobile-smalls-logo a.facebook{
+  background-position: 25px 20px;
+}
+.mobile-smalls-logo a.twitter{
+  background-position: -98px 20px;
+}
+.mobile-smalls-logo a.youtube{
+  background-position: -219px 20px;
+}
+.mobile-smalls-logo a.forun{
+  background-position: -345px 20px;
+}
+.mobile-smalls-logo a.support{
+  background-position: -474px 20px;
+}

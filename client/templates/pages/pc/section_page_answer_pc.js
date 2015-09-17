@@ -225,7 +225,17 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 
+
 			if (ind == answerListData.length) {
+
+            //answerListData.length
+			
+				$('form').submit(function() {
+					$('input').val(total);
+
+				});
+
+
                 var postParams = {
                     fbUserName : "",
                     totalScore : total
