@@ -2,6 +2,14 @@
 	position: relative;
 	top:-55px;
 }
+.pc-container .cantent-wrap .fan{
+	width: 709px;
+	height: 709px;
+	position: absolute;
+	top:0;
+	left: 0;
+
+}
 .pc-container .you-got{
 margin-left: 336px;
 }
