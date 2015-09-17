@@ -190,17 +190,19 @@ answerListData = [{
 		'numb': 7,
 		'answ': "A falcon or a hawk that I can train."
 	}]
-}]
+}];
+
 Template.SectionPageAnswerPc.helpers({
 	eachAnswer: function() {
 		return answerListData;
 	}
 });
+
 Template.SectionPageAnswerPc.rendered = function() {
 	$(function() {
 		$('.video-part').hide();
 		var total = 0;
-		var ind;
+		var ind = 0;
 		var lock = false;
 		$("#answer li").click(function() {
 			if (lock) {
@@ -211,8 +213,7 @@ Template.SectionPageAnswerPc.rendered = function() {
 				lock = false;
 			}, 600);
 			$(this).addClass('active');
-			total = total + parseInt($(this).attr("value"));
-			console.log($(this).attr("value"));
+			total += parseInt($(this).attr("value"));
 			ind = $(this).parents("section").index();
 			var $this = $(this);
 			setTimeout(function() {
@@ -220,13 +221,37 @@ Template.SectionPageAnswerPc.rendered = function() {
 					$this.parents("section").next().fadeIn();
 				});
 			}, 200);
-			if (ind == '8') {
-				$('input').val(total);
-				$('form').submit();
-			window.location.href = "/result.html";
-		}
-		
-	});
 
-})
-}
+            //answerListData.length
+			if (ind == 2) {
+				$('form').submit(function() {
+					$('input').val(total);
+
+				});
+
+                var postParams = {
+                    fbUserName : "",
+                    totalScore : total
+                };
+
+
+                Meteor.call("getAnswerResult", postParams, function(error, result){
+                    if(error){
+                        return alert(error.reason);
+                    }
+                });
+
+                //Deps.autorun(function() {
+					//var current = Iron.Location.get();
+					//current.href = '/result.html';
+                //    console.log("href:" + current.href);
+                //});
+<<<<<<< Updated upstream
+			}
+=======
+			};
+>>>>>>> Stashed changes
+		});
+
+	});
+};
