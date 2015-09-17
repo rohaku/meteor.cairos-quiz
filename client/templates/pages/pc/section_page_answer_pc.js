@@ -221,18 +221,12 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 			if (ind == '8') {
-				console.log(total);
-				$('form').submit(function() {
-					$('input').val(total);
-
-				});
-				Deps.autorun(function() {
-					var current = Iron.Location.get();
-					console.log(current.href);
-					current.href = '/result.html';
-				})
-			};
-		});
+				$('input').val(total);
+				$('form').submit();
+			window.location.href = "/result.html";
+		}
+		
 	});
 
+})
 }
