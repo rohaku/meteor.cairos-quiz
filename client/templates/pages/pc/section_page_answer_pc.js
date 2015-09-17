@@ -209,12 +209,15 @@ Template.SectionPageAnswerPc.rendered = function() {
 				return;
 			}
 			lock = true;
+
 			setTimeout(function() {
 				lock = false;
 			}, 600);
+
 			$(this).addClass('active');
 			total += parseInt($(this).attr("value"));
 			ind = $(this).parents("section").index();
+
 			var $this = $(this);
 			setTimeout(function() {
 				$this.parents("section").fadeOut(500, function() {
@@ -222,18 +225,11 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 
-            //answerListData.length
-			if (ind == 2) {
-				$('form').submit(function() {
-					$('input').val(total);
-
-				});
-
+			if (ind == answerListData.length) {
                 var postParams = {
                     fbUserName : "",
                     totalScore : total
                 };
-
 
                 Meteor.call("getAnswerResult", postParams, function(error, result){
                     if(error){
@@ -241,11 +237,6 @@ Template.SectionPageAnswerPc.rendered = function() {
                     }
                 });
 
-                //Deps.autorun(function() {
-					//var current = Iron.Location.get();
-					//current.href = '/result.html';
-                //    console.log("href:" + current.href);
-                //});
 			};
 		});
 
