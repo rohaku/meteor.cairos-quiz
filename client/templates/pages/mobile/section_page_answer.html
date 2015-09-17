@@ -1,0 +1,31 @@
+<template name="SectionPageAnswerMobile">
+{{>SectionPageNavbarMobile}}
+<div class="answer-wrap">
+	<div class="home-page-bg">
+		{{>SectionPageHeadMobile}}
+		<div class="main-content">
+			<div class="home-page-title"></div> 
+			<div class="sheep-img"></div>
+			<div class="qustion-nav"><h2>QUESTION</h2></div>
+			<form action="/result.html" method="post">
+			<div class="answer-content" id="answer">
+			<input type="hidden" value="" name='total'/>
+			{{#each eachAnswer}}
+				<section class="answer-list">
+					<h1>{{name}}</h1>
+					<div class='qustion-title'>{{title}}</div>
+					<ul>
+					{{#each option}}
+						<li value='{{numb}}'><span> {{opt}}</span>{{answ}}
+						</li>
+					{{/each}}
+					</ul>
+				</section>
+				{{/each}}
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+{{>SectionPageFooter}}
+</template>

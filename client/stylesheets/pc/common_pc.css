@@ -19,7 +19,8 @@
 	margin: 28px 0 0 26px;
 	width: 297px;
 	height: 125px;
-	background: url("/images/small/cairo_logo.png") no-repeat right bottom;
+	background: url("/images/medium/cairo_logo.png") no-repeat right bottom;
+	background-size:contain;
 }
 .pc-container .head-content .logo-part a{
 	display: inline-block;

@@ -127,9 +127,21 @@
     margin-right:auto;
 }
 
-
 .quiz-btn.btn-start-quiz .btn-bg{
     left:10%;
     right:10%;
 }
 /* At Home page's btn-start-quiz Buttons style end */
+
+/* At Mobile Home page's btn-start-quiz Buttons style start */
+.quiz-btn.mobStartQuizBtn{
+    width: 394px;
+    height: 82px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.quiz-btn.mobStartQuizBtn .btn-bg{
+    left:10%;
+    right:10%;
+}
+/* At Mobile Home page's btn-start-quiz Buttons style end */

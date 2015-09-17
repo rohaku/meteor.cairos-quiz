@@ -1,0 +1,28 @@
+.mobile-container{
+	width: 750px;
+}
+.mobile-container .head-content{
+	position: relative;
+	padding-top: 20px;
+}
+.mobile-container .head-content .logo-part{
+	margin: 0 auto;
+	width: 401px;
+	height: 170px;
+	background: url("/images/medium/cairo_logo.png") no-repeat right bottom;
+}
+.mobile-container .head-content .logo-part a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.mobile-container .head-content .video-part{
+	position: absolute;
+	top:0;
+	cursor: pointer;
+	right: 0px;
+	width: 161px;
+	height: 128px;
+	background: url("/images/small/video_icon.png") no-repeat center top;
+	background-size: contain;
+}

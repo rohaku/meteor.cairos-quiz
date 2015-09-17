@@ -1,4 +1,19 @@
 <template name="HomePageMobile">
 {{>SectionPageNavbarMobile}}
+<div class="answer-wrap">
+	<div class="home-page-bg">
+		{{>SectionPageHeadMobile}}
+		<div class="main-content">
+			<div class="home-page-title"></div> 
+			<div class="sheep-img"></div>
+			<div class='mian-intro all-small-fonts-style'>
+			Take this fun quiz and share it <br/>
+			with your friends onFACEBOOK for a chance to win a <br/>
+			GIFT CODE for a rare in-game item!
+			</div>
+            {{#quizButton btnId="mobStartQuizBtn" themeColor="green" customClass="btn-start-quiz" buttonContent="<p>START THE QUIZ</p>"}}{{/quizButton}}
+		</div>
+	</div>
+</div>
 {{>SectionPageFooter}}
 </template>
