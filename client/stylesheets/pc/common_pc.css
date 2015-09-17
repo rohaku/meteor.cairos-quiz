@@ -42,3 +42,6 @@
 	color: #fff;
 	text-align: center;
 }
+.pc-container .mian-content{
+	position: relative;
+}
