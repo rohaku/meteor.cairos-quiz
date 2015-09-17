@@ -246,11 +246,7 @@ Template.SectionPageAnswerPc.rendered = function() {
 					//current.href = '/result.html';
                 //    console.log("href:" + current.href);
                 //});
-<<<<<<< Updated upstream
-			}
-=======
 			};
->>>>>>> Stashed changes
 		});
 
 	});
