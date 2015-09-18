@@ -199,11 +199,6 @@ Template.SectionPageAnswerPc.helpers({
 });
 
 Template.SectionPageAnswerPc.rendered = function() {
-    try {
-        FB.XFBML.parse();
-    }catch(e) {
-        console.log(e.message);
-    }
 
 	$(function() {
 		$('.video-part').hide();
@@ -231,8 +226,8 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 
-
-			if (ind == answerListData.length) {
+            var lastIdx = 3;/*answerListData.length*/
+			if (ind == lastIdx) {
                 var postParams = {
                     fbUserName : "",
                     totalScore : total
