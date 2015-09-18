@@ -1,0 +1,122 @@
+.mobile-container .main-content{
+	position: relative;
+}
+.mobile-container .result-show {
+	position: relative;
+	z-index: 2;
+}
+
+.mobile-container .main-content .fan {
+	width: 719px;
+	height: 729px;
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 1;
+	background: url("/images/large/fan_bg.png") no-repeat center top;
+	background-size:contain;
+	opacity: 0.3;
+}
+
+.mobile-container .you-got {
+	width: 418px;
+	height: 119px;
+	margin: 0 auto;
+	margin-top: 47px;
+	background: url("images/small/mobile_you_got.png") no-repeat center top;
+}
+
+.mobile-container .result-show #heroesImg {
+	margin:0 auto;
+	
+}
+
+.mobile-container .result-show #heroesImg.chicken {
+	width: 241px;
+	height: 365px;
+	background: url("/images/medium/cluster_cluck.png") no-repeat center 130px;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesImg.duck {
+	width: 238px;
+	height: 412px;
+	background: url("/images/medium/ductor_quack.png") no-repeat center bottom;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesImg.orangutan {
+	width: 391px;
+	height: 442px;
+	background: url("/images/medium/jungle_jim.png") no-repeat center bottom;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesImg.frog {
+	width: 263px;
+	height:410px; 
+	background: url("/images/medium/yoga_frog.png") no-repeat center 74px;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesImg.hammster {
+	width: 292px;
+	height: 395px;
+	background: url("/images/medium/hammster.png") no-repeat center 50px;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesTitle {
+	margin: auto;
+	height: 125px;
+}
+
+.mobile-container .result-show #heroesTitle.chicken {
+	margin-top: 20px;
+	width: 541px;
+	background: url("/images/small/cluster_cluck_title.png") no-repeat center top;
+    background-size:contain;
+}
+
+.mobile-container .result-show #heroesTitle.duck {
+	width: 523px;
+	background: url("/images/small/ductor_quack_title.png") no-repeat center top;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesTitle.orangutan {
+	width: 395px;
+	background: url("/images/small/jungle_jim_title.png") no-repeat center top;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesTitle.frog {
+	width: 384px;
+	background: url("/images/small/yoga_frog_title.png") no-repeat center top;
+	background-size:contain;
+}
+
+.mobile-container .result-show #heroesTitle.hammster {
+	width: 604px;
+	background: url("/images/small/hammster_title.png") no-repeat center top;
+	background-size:contain;
+}
+
+.mobile-container .result-show .heroes-intro {
+	width: 100%;
+	color: #fff;
+	font-size: 2.2rem;
+	line-height: 38px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+
+.btn-content > div {
+	margin-bottom: 20px;
+}

@@ -1,12 +1,24 @@
 <template name="SectionPageResultMobile">
 {{>SectionPageNavbarMobile}}
 <div class="answer-wrap">
-	<div class="home-page-bg">
 		{{>SectionPageHeadMobile}}
 		<div class="main-content">
-			
+		<div class="fan"></div>
+			<div class="result-show">
+			<div class="you-got"></div>
+				<div id='heroesImg' class="hammster"></div>
+				<div id='heroesTitle' class="hammster"></div>
+				<div id='heroesIntro' class="heroes-intro">
+					<p>ClusterCluck is as loyal and dependable <br/>as friends come. You can always count him to <br/>have your back when you need him.</p>
+				</div>
+			</div>
+			<div class="btn-content">
+				{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mob-btn-start-quiz" buttonContent="<p>PLAY AGAIN</p>"}}{{/quizButton}}
+
+				{{#quizButton btnId="claimRewardBtn" themeColor="red" customClass="mob-btn-start-quiz" buttonContent="<p>CLAIM YOUR REWARD</p>"}}{{/quizButton}}
+			</div>
 		</div>
-	</div>
+	
 </div>
 {{>SectionPageFooter}}
 </template>

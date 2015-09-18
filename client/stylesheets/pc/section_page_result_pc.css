@@ -5,8 +5,8 @@
 }
 
 .pc-container .cantent-wrap .fan {
-	width: 709px;
-	height: 709px;
+	width: 793px;
+	height: 794px;
 	position: absolute;
 	top: 55px;
 	left: 50%;
@@ -16,7 +16,7 @@
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	z-index: 1;
-	background: url("/images/medium/fan_bg.png") no-repeat center top;
+	background: url("/images/large/fan_bg.png") no-repeat center top;
 	opacity: 0.3;
 }
 

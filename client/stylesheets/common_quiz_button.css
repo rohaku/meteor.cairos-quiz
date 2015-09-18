@@ -144,6 +144,9 @@
     left:10%;
     right:10%;
 }
+.mobile-container .quiz-btn.mob-btn-start-quiz .btn-cont > p{
+    font-size: 2.8rem;
+}
 /* At Mobile Home page's btn-start-quiz Buttons style end */
 
 /* At PC reward page's btn-share-up Buttons style start */
@@ -157,6 +160,7 @@
     left:10%;
     right:10%;
 }
+
 /* At PC reward page's btn-share-up Buttons style end */
 /* At PC reward page's btn-app-store Buttons style start */
 .quiz-btn.btn-app-store{
