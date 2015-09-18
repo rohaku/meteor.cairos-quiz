@@ -1,3 +1,8 @@
+.mobile-container .answer-page-bg{
+	height: 100%;
+	width: 100%;
+	background:url("images/medium/mobile_answer_page_bg.png") no-repeat center top;
+}
 .mobile-container .main-content .qustion-nav{
 	width:654px;
 	height:137px;

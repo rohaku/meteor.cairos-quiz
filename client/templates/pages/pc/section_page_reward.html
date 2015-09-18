@@ -1,0 +1,35 @@
+<template name="SectionPageRewardPc">
+{{>SectionPageNavbarPc}}
+<div class='share-wrap'>
+	<div class="cantent-wrap">
+		{{>SectionPageHeadPc}}
+		<div class="mian-content">
+			<div class="fan"></div>
+			<div class="reward-content">
+				<h1></h1>
+				<div id='rewardPicture' class="sack-gold"></div>
+				<h2 id='rewardDes' class='sack-gold'></h2>
+			</div>
+			<div class="connect-container" style='display:none;'>
+				<div class="code-number">************ </div>
+				<p>Connect to Facebook to REVEAL your Gift Code.
+				</p>
+				{{#quizButton btnId="connectBtn" themeColor="green" customClass="btn-start-quiz" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
+			</div>
+			<div class="share-container">
+				<div class="code-number">012203B25JE</div>
+				<p>Want more prizes? <br/>
+					Share up this quiz for a chance to win exclusive rewards<br/>
+				for you and your friends!</p>
+				<div class="download-btn-box">
+					{{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-btn-share-up" buttonContent="<p>SHARE UP</p>"}}{{/quizButton}}
+					{{#quizButton btnId="appStoreBtn" themeColor="red" customClass="btn-app-store" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+{{>SectionPageFooter}}
+</template>

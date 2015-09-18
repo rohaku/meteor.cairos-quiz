@@ -2,6 +2,9 @@ Template.SectionPageResultPc.events({
     'click div#startQuizBtn': function(event){
        Router.go('answer.do');
     },
+    'click div#claimRewardBtn': function(event){
+       Router.go('result.reward');
+    },
 
     'click div#claimRewardBtn': function(event){
         FB.getLoginStatus(function(response) {

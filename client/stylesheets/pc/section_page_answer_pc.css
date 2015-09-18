@@ -18,7 +18,6 @@
 	width: 835px;
 	overflow: hidden;
 	color: #fff;
-	font-family: 'Arial';
 	text-align: center;
 	height: 600px;
 }
@@ -38,6 +37,7 @@
 	text-align: center;
 	font-size: 2.5rem;
 	font-weight: 900;
+	font-family: 'Arial';
 }
 .pc-container .cantent-wrap ul li{
 	margin:10px auto;
@@ -45,7 +45,6 @@
 	height: 66px;
 	line-height: 66px;
 	font-size: 2.1rem;
-	font-family: 'candelabold';
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -62,4 +61,5 @@
 }
 .pc-container .cantent-wrap ul li span{
 	padding-right: 27px;
+	font-family: 'Arial';
 }

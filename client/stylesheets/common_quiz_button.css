@@ -134,14 +134,39 @@
 /* At Home page's btn-start-quiz Buttons style end */
 
 /* At Mobile Home page's btn-start-quiz Buttons style start */
-.quiz-btn.mobStartQuizBtn{
-    width: 394px;
-    height: 82px;
+.quiz-btn.mob-btn-start-quiz{
+    width: 393px;
+    height: 81px;
     margin-left:auto;
     margin-right:auto;
 }
-.quiz-btn.mobStartQuizBtn .btn-bg{
+.quiz-btn.mob-btn-start-quiz .btn-bg{
     left:10%;
     right:10%;
 }
 /* At Mobile Home page's btn-start-quiz Buttons style end */
+
+/* At PC reward page's btn-share-up Buttons style start */
+.quiz-btn.pc-btn-share-up{
+    width: 357px;
+    height: 88px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.quiz-btn.pc-btn-share-up .btn-bg{
+    left:10%;
+    right:10%;
+}
+/* At PC reward page's btn-share-up Buttons style end */
+/* At PC reward page's btn-app-store Buttons style start */
+.quiz-btn.btn-app-store{
+    width: 208px;
+    height: 88px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.quiz-btn.btn-app-store .btn-bg{
+    left:14%;
+    right:14%;
+}
+/* At PC reward page's btn-app-store Buttons style end */

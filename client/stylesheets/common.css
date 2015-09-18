@@ -34,6 +34,7 @@ html, body{
     font-size:10px;
     background-color: #000;
     font-family: 'candelabold';
+    color: #fff;
 }
 
 div{
@@ -95,6 +96,10 @@ div{
 
 	.footer-right {
 		margin-top: 20px;
+	}
+	.col-xs-12{
+		padding: 0 !important;
+
 	}
 
 }

@@ -1,0 +1,57 @@
+.pc-container .reward-content h1 {
+	width: 100%;
+	margin-top: 56px;
+	height: 177px;
+	background: url("/images/small/congratulate.png") no-repeat center top;
+}
+
+.pc-container .reward-content div#rewardPicture {
+	width: 100%;
+	height: 265px;
+}
+
+.pc-container .reward-content div#rewardPicture.sack-gold {
+	margin-top: 82px;
+	background: url("/images/medium/sack_gold_picture.png") no-repeat center top;
+}
+
+.pc-container .reward-content h2#rewardDes {
+}
+
+.pc-container .reward-content h2#rewardDes.sack-gold {
+	height: 93px;
+	background: url("/images/small/sack_gold_title.png") no-repeat center top;
+}
+.pc-container .code-number{
+	padding-left: 108px;
+	margin: 60px auto 20px;
+	height: 75px;
+	width: 425px;
+	border: 1px dashed #fff;
+	border-radius: 30px;
+	background: url("/images/small/key_icon.png") no-repeat 51px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 75px;
+	font-size: 4rem;
+	font-family: 'Arial';
+}
+.pc-container .connect-container p,.share-container p{
+	line-height: 32px;
+	font-size: 2rem;
+	text-align:center;
+	padding-bottom: 20px;
+}
+.pc-container .download-btn-box{
+	padding-top: 20px;
+	width: 590px;
+	margin: 0 auto;
+}
+.pc-container .share-container .pc-btn-share-up,
+.pc-container .share-container .btn-app-store{
+	float: left;
+	margin-left: 10px;
+}
