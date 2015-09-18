@@ -199,6 +199,12 @@ Template.SectionPageAnswerPc.helpers({
 });
 
 Template.SectionPageAnswerPc.rendered = function() {
+    try {
+        FB.XFBML.parse();
+    }catch(e) {
+        console.log(e.message);
+    }
+
 	$(function() {
 		$('.video-part').hide();
 		var total = 0;
@@ -227,15 +233,6 @@ Template.SectionPageAnswerPc.rendered = function() {
 
 
 			if (ind == answerListData.length) {
-
-            //answerListData.length
-			
-				$('form').submit(function() {
-					$('input').val(total);
-
-				});
-
-
                 var postParams = {
                     fbUserName : "",
                     totalScore : total
