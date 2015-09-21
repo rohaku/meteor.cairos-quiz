@@ -10,7 +10,7 @@
 	width: 719px;
 	height: 729px;
 	position: absolute;
-	top: 55px;
+	top: -70px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -27,7 +27,7 @@
 	width: 418px;
 	height: 119px;
 	margin: 0 auto;
-	margin-top: 47px;
+	margin-top: 25px;
 	background: url("images/small/mobile_you_got.png") no-repeat center top;
 }
 
@@ -38,36 +38,36 @@
 
 .mobile-container .result-show #heroesImg.chicken {
 	width: 241px;
-	height: 365px;
-	background: url("/images/medium/cluster_cluck.png") no-repeat center 130px;
+	height: 310px;
+	background: url("/images/medium/cluster_cluck.png") no-repeat center 39px;
 	background-size:contain;
 }
 
 .mobile-container .result-show #heroesImg.duck {
 	width: 238px;
-	height: 412px;
-	background: url("/images/medium/ductor_quack.png") no-repeat center bottom;
+	height: 385px;
+	background: url("/images/medium/ductor_quack.png") no-repeat center top;
 	background-size:contain;
 }
 
 .mobile-container .result-show #heroesImg.orangutan {
 	width: 391px;
-	height: 442px;
+	height: 385px;
 	background: url("/images/medium/jungle_jim.png") no-repeat center bottom;
 	background-size:contain;
 }
 
 .mobile-container .result-show #heroesImg.frog {
 	width: 263px;
-	height:410px; 
+	height:325px; 
 	background: url("/images/medium/yoga_frog.png") no-repeat center 74px;
 	background-size:contain;
 }
 
 .mobile-container .result-show #heroesImg.hammster {
 	width: 292px;
-	height: 395px;
-	background: url("/images/medium/hammster.png") no-repeat center 50px;
+	height: 350px;
+	background: url("/images/medium/hammster.png") no-repeat center top;
 	background-size:contain;
 }
 

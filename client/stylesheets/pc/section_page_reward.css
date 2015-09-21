@@ -7,20 +7,41 @@
 
 .pc-container .reward-content div#rewardPicture {
 	width: 100%;
-	height: 265px;
 }
 
 .pc-container .reward-content div#rewardPicture.sack-gold {
+	height: 275px;
 	margin-top: 82px;
-	background: url("/images/medium/sack_gold_picture.png") no-repeat center top;
+	background: url("/images/medium/sack_gold.png") no-repeat center top;
+}
+.pc-container .reward-content div#rewardPicture.chest-diamonds {
+	height: 294px;
+	margin-top: 70px;
+	background: url("/images/medium/chest_diamonds.png") no-repeat center top;
+	
+}
+.pc-container .reward-content div#rewardPicture.pouch-gold {
+	height: 290px;
+	margin-top: 78px;
+	background: url("/images/medium/pouch_gold.png") no-repeat center top;
+	
 }
 
 .pc-container .reward-content h2#rewardDes {
+	height: 94px;
 }
 
 .pc-container .reward-content h2#rewardDes.sack-gold {
-	height: 93px;
 	background: url("/images/small/sack_gold_title.png") no-repeat center top;
+}
+
+.pc-container .reward-content h2#rewardDes.chest-diamonds {
+	background: url("/images/small/chest_diamonds_title.png") no-repeat center top;
+	
+}
+.pc-container .reward-content h2#rewardDes.pouch-gold {
+	background: url("/images/small/pouch_gold_title.png") no-repeat center top;
+	
 }
 .pc-container .code-number{
 	padding-left: 108px;
