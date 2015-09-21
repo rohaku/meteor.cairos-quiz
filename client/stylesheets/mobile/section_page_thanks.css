@@ -1,0 +1,12 @@
+.mobile-container  .main-content .thanks-icon{
+	width: 387px;
+	height: 418px;
+	margin: 150px auto 48px;
+	background: url("/images/medium/thanks_icon.png") no-repeat center top;
+}
+.mobile-container  .main-content .thanks-intro{
+	text-align: center;
+	line-height: 48px;
+	font-size: 2.8rem;
+	padding-bottom: 52px;
+}
