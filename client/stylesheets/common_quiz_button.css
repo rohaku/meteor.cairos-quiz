@@ -119,58 +119,77 @@
  * ================  Some custom style's classes can be edited at below  ================
  */
 
-/* At Home page's btn-start-quiz Buttons style start */
-.quiz-btn.btn-start-quiz{
-    width:429px;
-    height:99px;
+/* At PC page's Buttons style start */
+.quiz-btn.pc-large-btn{
+     width:429px;
+    height:88px;
     margin-left:auto;
     margin-right:auto;
 }
-
-.quiz-btn.btn-start-quiz .btn-bg{
+.quiz-btn.pc-large-btn .btn-bg{
     left:10%;
     right:10%;
 }
-/* At Home page's btn-start-quiz Buttons style end */
-
-/* At Mobile Home page's btn-start-quiz Buttons style start */
-.quiz-btn.mob-btn-start-quiz{
-    width: 393px;
-    height: 81px;
-    margin-left:auto;
-    margin-right:auto;
-}
-.quiz-btn.mob-btn-start-quiz .btn-bg{
-    left:10%;
-    right:10%;
-}
-.mobile-container .quiz-btn.mob-btn-start-quiz .btn-cont > p{
-    font-size: 2.8rem;
-}
-/* At Mobile Home page's btn-start-quiz Buttons style end */
-
-/* At PC reward page's btn-share-up Buttons style start */
-.quiz-btn.pc-btn-share-up{
-    width: 357px;
+.quiz-btn.pc-medium-btn{
+    width: 359px;
     height: 88px;
     margin-left:auto;
     margin-right:auto;
 }
-.quiz-btn.pc-btn-share-up .btn-bg{
+.quiz-btn.pc-medium-btn .btn-bg{
     left:10%;
     right:10%;
 }
-
-/* At PC reward page's btn-share-up Buttons style end */
-/* At PC reward page's btn-app-store Buttons style start */
-.quiz-btn.btn-app-store{
-    width: 208px;
+.quiz-btn.pc-small-btn{
+    width: 209px;
     height: 88px;
     margin-left:auto;
     margin-right:auto;
 }
-.quiz-btn.btn-app-store .btn-bg{
+.quiz-btn.pc-small-btn .btn-bg{
     left:14%;
     right:14%;
 }
-/* At PC reward page's btn-app-store Buttons style end */
+
+/* At PC page's Buttons style end */
+
+/* At Mobile  page's  Buttons style start */
+.quiz-btn.mob-large-btn{
+    width: 395px;
+    height: 81px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.quiz-btn.mob-large-btn .btn-bg{
+    left:10%;
+    right:10%;
+}
+.mobile-container .quiz-btn.mob-large-btn .btn-cont > p{
+    font-size: 2.8rem;
+}
+.quiz-btn.mob-medium-btn{
+    width: 331px;
+    height: 81px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.quiz-btn.mob-medium-btn .btn-bg{
+    left:10%;
+    right:10%;
+}
+.quiz-btn.mob-small-btn{
+    width: 193px;
+    height: 81px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.quiz-btn.mob-small-btn .btn-bg{
+    left:10%;
+    right:10%;
+}
+/* At Mobile page's Buttons style end */
+
+

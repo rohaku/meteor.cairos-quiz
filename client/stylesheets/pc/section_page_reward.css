@@ -72,8 +72,8 @@
 	margin: 0 auto;
 }
 
-.pc-container .share-container .pc-btn-share-up,
-.pc-container .share-container .btn-app-store{
+.pc-container .share-container .pc-medium-btn,
+.pc-container .share-container .pc-small-btn{
 	float: left;
 	margin-left: 10px;
 }
