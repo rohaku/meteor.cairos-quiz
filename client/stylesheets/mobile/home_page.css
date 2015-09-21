@@ -9,6 +9,11 @@
 	background:url("images/medium/mobile_question_page_bg.jpg") no-repeat center top;
 
 }
+.reuslt-wrap{
+	width: 100%;
+	background:url("images/medium/mobile_result_page_bg.jpg") no-repeat center top;
+
+}
 .mobile-container .home-page-bg{
 	height: 100%;
 	width: 100%;
@@ -20,7 +25,7 @@
 	padding-bottom: 60px;
 }
 .mobile-container .home-page-title{
-	margin: 42px auto 95px;
+	margin:50px auto 30px;
 	width: 632px;
 	height: 185px;
 	background: url("/images/small/mobile_home_page_title.png") no-repeat 0 0;
