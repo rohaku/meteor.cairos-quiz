@@ -13,7 +13,9 @@ Handlebars.registerHelper('isMobile', function () {
 });
 
 var fbTrys = 0;
+
 Session.set("fbSdkLoadStatue", false);
+
 function ensureFBInit () {
     fbTrys++;
     if (fbTrys > 60) {
@@ -30,6 +32,7 @@ function ensureFBInit () {
     }
     Session.set("fbSdkLoadStatue", true);
 }
+
 Meteor.startup(function () {
     ensureFBInit();
 });

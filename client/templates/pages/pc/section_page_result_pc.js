@@ -4,7 +4,13 @@ Template.SectionPageResultPc.events({
     },
 
     'click div#claimRewardBtn': function(event){
-       Router.go('result.reward');
+        FB.getLoginStatus(function(response){
+            if (response.status === 'connected') {
+                Router.go('result.reward', {resultBranch: "share"});
+            }else{
+                Router.go('result.reward', {resultBranch: "connect"});
+            }
+        });
     }
 
 });
@@ -17,5 +23,5 @@ Template.SectionPageResultPc.rendered = function(){
     }
 
     //获取用户答题后的结果并分配显示
-    Meteor.call("getAnswerResultRender", myAnswerResult);
+    Meteor.call("makeResultRender", myAnswerResult);
 };

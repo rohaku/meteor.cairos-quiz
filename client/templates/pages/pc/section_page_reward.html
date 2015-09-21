@@ -10,27 +10,31 @@
 				<div id='rewardPicture' class="sack-gold"></div>
 				<h2 id='rewardDes' class='sack-gold'></h2>
 			</div>
-            {{#if isFBLoaded}}
-                <div class="share-container hide" id="rewardShareContainer">
-                    <div class="code-number">012203B25JE</div>
-                    <p>Want more prizes? <br/>
-                        Share up this quiz for a chance to win exclusive rewards<br/>
-                        for you and your friends!</p>
-                    <div class="download-btn-box">
-                        {{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-btn-share-up" buttonContent="<p>SHARE UP</p>"}}{{/quizButton}}
-                        {{#quizButton btnId="appStoreBtn" themeColor="red" customClass="btn-app-store" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}
-                    </div>
-                </div>
-                <div class="connect-container hide" id="rewardConnectContainer">
-                    <div class="code-number">************ </div>
-                    <p>Connect to Facebook to REVEAL your Gift Code.
-                    </p>
-                    {{#quizButton btnId="connectBtn" themeColor="green" customClass="btn-start-quiz" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
-                </div>
-                {{showConnectContent}}
-            {{else}}
-                <div class="connect-container loading"></div>
-            {{/if}}
+            {{>yield 'quizComplete'}}
+            <!--{{#if isFBLoaded}}-->
+                <!--{{setFBLoginStatus}}-->
+                <!--{{#if isFBLogin}}-->
+                <!--<div class="share-container" id="rewardShareContainer">-->
+                    <!--<div class="code-number">012203B25JE</div>-->
+                    <!--<p>Want more prizes? <br/>-->
+                        <!--Share up this quiz for a chance to win exclusive rewards<br/>-->
+                        <!--for you and your friends!</p>-->
+                    <!--<div class="download-btn-box">-->
+                        <!--{{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-btn-share-up" buttonContent="<p>SHARE UP</p>"}}{{/quizButton}}-->
+                        <!--{{#quizButton btnId="appStoreBtn" themeColor="red" customClass="btn-app-store" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--{{else}}-->
+                <!--<div class="connect-container" id="rewardConnectContainer">-->
+                    <!--<div class="code-number">************ </div>-->
+                    <!--<p>Connect to Facebook to REVEAL your Gift Code.-->
+                    <!--</p>-->
+                    <!--{{#quizButton btnId="connectBtn" themeColor="green" customClass="btn-start-quiz" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}-->
+                <!--</div>-->
+                <!--{{/if}}-->
+            <!--{{else}}-->
+                <!--<div class="connect-container loading"></div>-->
+            <!--{{/if}}-->
 		</div>
 	</div>
 </div>

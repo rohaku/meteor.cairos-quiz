@@ -201,6 +201,13 @@ Template.SectionPageAnswerPc.helpers({
 Template.SectionPageAnswerPc.rendered = function() {
 
 	$(function() {
+        //logoutFB
+        try {
+            FB.XFBML.parse();
+        }catch(e) {
+        }
+
+
 		$('.video-part').hide();
 		var total = 0;
 		var ind = 0;
@@ -232,6 +239,15 @@ Template.SectionPageAnswerPc.rendered = function() {
                     fbUserName : "",
                     totalScore : total
                 };
+
+                FB.getLoginStatus(function (response) {
+                    console.log(response);
+                    if (response.status === 'connected') {
+                        console.log("you are logined")
+                    }else{
+                        console.log("u are not login");
+                    }
+                });
 
                 Meteor.call("getAnswerResult", postParams, function(error, result){
                     if(error){
