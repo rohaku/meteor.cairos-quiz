@@ -233,7 +233,7 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 
-            var lastIdx = 3;/*answerListData.length*/
+            var lastIdx = 2;/*answerListData.length*/
 			if (ind == lastIdx) {
                 var postParams = {
                     fbUserName : "",
@@ -241,11 +241,10 @@ Template.SectionPageAnswerPc.rendered = function() {
                 };
 
                 FB.getLoginStatus(function (response) {
-                    console.log(response);
                     if (response.status === 'connected') {
-                        console.log("you are logined")
+                        //console.log("you are logined")
                     }else{
-                        console.log("u are not login");
+                        //console.log("u are not login");
                     }
                 });
 

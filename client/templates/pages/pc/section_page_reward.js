@@ -16,7 +16,13 @@ Template.SectionPageRewardPc.events({
                 // the user is logged in to Facebook,
                 // but has not authenticated your app
             } else {
-                FB.login();
+                FB.login(function(response){
+                    var uid = response.authResponse.userID;
+                    var accessToken = response.authResponse.accessToken;
+                    console.log(response);
+                    console.log(uid);
+                    console.log(accessToken);
+                });
             }
         });
     }
