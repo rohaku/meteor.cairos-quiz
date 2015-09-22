@@ -1,3 +1,7 @@
+.pc-container .claim-cont{
+	min-height: 1200px;
+}
+
 .pc-container .claim-code-title{
 	margin-top: 97px;
 	margin-bottom: 20px;

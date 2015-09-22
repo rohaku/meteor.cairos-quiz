@@ -18,8 +18,7 @@
 }
 .friend-gift-container .swiper-slide{
 	font-size:18px;
-	height:auto; 
-	padding-top: 2px;
+	height:auto;
 }
 .friend-gift-container .swiper-scrollbar{
 	border-left: 1px solid #937649;
@@ -43,6 +42,9 @@
 	line-height: 68px;
 	height: 64px;
 	border-bottom: 1px dashed #937649;
+}
+.friend-gift-container table tr:last-child{
+	border-bottom: none;
 }
 .friend-gift-container table tr label{
 	color: #ffcc00;

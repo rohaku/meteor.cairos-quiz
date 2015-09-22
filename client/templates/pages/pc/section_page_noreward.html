@@ -1,0 +1,21 @@
+<template name="SectionPageNorewardPc">
+{{>SectionPageNavbarPc}}
+<div class='noreward-wrap'>
+	<div class="cantent-wrap">
+		{{>SectionPageHeadPc}}
+		<div class="mian-content">
+			<h1 class='too-late-title'></h1>
+			<p>All the codes have been claimed by your friends.<br/>
+				If you want another chance to win,<br/>
+			TAKE THE QUIZ!</p>
+			 <div class="download-btn-box">
+            {{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-medium-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
+            {{#quizButton btnId="appStoreBtn" themeColor="red" customClass="pc-small-btn" buttonContent="<p><img src='/images/small/app_store.png' /></p>"}}{{/quizButton}}
+        </div>
+        {{>FriendGift}}
+			
+		</div>
+	</div>
+</div>
+{{>SectionPageFooter}}
+</template>
