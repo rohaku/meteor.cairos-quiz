@@ -17,7 +17,7 @@ window.fbAsyncInit = function() {
     urls.forEach(function (url) {
         console.log(Meteor.absoluteUrl().substr(0, url.length));
         if (Meteor.absoluteUrl().substr(0, url.length) == url)
-            appId = Meteor.util.cnst.fbAppIdProduction;
+            appId = Meteor.faceBookUtil.cnst.fbAppIdProduction;
     });
     console.log('[window.fbAsyncInit] running with appId ' + appId);
     window.facebookInitStarted = true;
