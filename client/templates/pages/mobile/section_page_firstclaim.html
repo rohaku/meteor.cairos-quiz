@@ -1,0 +1,21 @@
+<template name="SectionPageFirstclaimMobile">
+{{>SectionPageNavbarMobile}}
+<div class="reuslt-wrap">
+	{{>SectionPageHeadMobile}}
+	<div class="main-content">
+		<div class="fan interval"></div>
+			<div class="first-people"></div>
+			<div class="treasure-chests"></div>
+			<p class='firstclaim-text'>To claim your code<br/>
+			Please connect to your Facebook account </p>
+			<div class="firstclaim-btn-box">
+				{{#quizButton btnId="connect" themeColor="red" customClass="mobile-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
+				<p class='firstclaim-text'>OR</p>
+				{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mobile-large-btn" buttonContent="<p>TAKE&nbsp THE&nbsp QUIZ</p>"}}{{/quizButton}}
+				{{#quizButton btnId="appStore" themeColor="red" customClass="mobile-large-btn" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}
+			</div>
+	</div>
+	
+</div>
+{{>SectionPageFooter}}
+</template>

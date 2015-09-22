@@ -154,39 +154,39 @@
 /* At PC page's Buttons style end */
 
 /* At Mobile  page's  Buttons style start */
-.quiz-btn.mob-large-btn{
+.quiz-btn.mobile-large-btn{
     width: 395px;
     height: 81px;
     margin-left:auto;
     margin-right:auto;
 
 }
-.quiz-btn.mob-large-btn .btn-bg{
+.quiz-btn.mobile-large-btn .btn-bg{
     left:10%;
     right:10%;
 }
-.mobile-container .quiz-btn.mob-large-btn .btn-cont > p{
+.mobile-container .quiz-btn.mobile-large-btn .btn-cont > p{
     font-size: 2.8rem;
 }
-.quiz-btn.mob-medium-btn{
+.quiz-btn.mobile-medium-btn{
     width: 331px;
     height: 81px;
     margin-left:auto;
     margin-right:auto;
 
 }
-.quiz-btn.mob-medium-btn .btn-bg{
+.quiz-btn.mobile-medium-btn .btn-bg{
     left:10%;
     right:10%;
 }
-.quiz-btn.mob-small-btn{
+.quiz-btn.mobile-small-btn{
     width: 193px;
     height: 81px;
     margin-left:auto;
     margin-right:auto;
 
 }
-.quiz-btn.mob-small-btn .btn-bg{
+.quiz-btn.mobile-small-btn .btn-bg{
     left:10%;
     right:10%;
 }

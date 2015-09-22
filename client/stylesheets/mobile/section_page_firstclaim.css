@@ -1,0 +1,22 @@
+.mobile-container .first-people{
+	margin-top: 43px;
+	height: 147px;
+	background: url("/images/small/mobile_you_first.png") no-repeat center top;
+}
+.mobile-container .treasure-chests{
+	height: 290px;
+	background: url("/images/medium/treasure_chests.png") no-repeat center top;
+}
+.mobile-container .fan.interval{
+	top:117px;
+}
+.mobile-container .firstclaim-text{
+	text-align: center;
+	line-height: 34px;
+	font-size: 2.4rem;
+	 padding-top: 20px;
+}
+.mobile-container .firstclaim-btn-box > div{
+	margin-top: 20px;
+}
+

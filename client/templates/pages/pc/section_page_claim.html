@@ -1,20 +1,20 @@
-<template name="SectionPageFirstclaimPc">
+<template name="SectionPageClaimPc">
 {{>SectionPageNavbarPc}}
 <div class='share-wrap'>
 	<div class="cantent-wrap">
 		{{>SectionPageHeadPc}}
 		<div class="mian-content">
 			<div class="fan interval"></div>
-			<div class="first-people"></div>
+			<div class="claim-code-title"></div>
 			<div class="treasure-chests"></div>
-			<p class='firstclaim-text'>To claim your code<br/>
-			Please connect to your Facebook account </p>
-			<div class="firstclaim-btn-box">
+			<p class='firstclaim-text'>Please CONNECT to  your Facebook account </p>
+			<div class="claim-connect-btn">
 				{{#quizButton btnId="connect" themeColor="red" customClass="pc-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
-				<p class='firstclaim-text'>OR</p>
+				</div>
+				
 				{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="pc-large-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
-				{{#quizButton btnId="appStore" themeColor="red" customClass="pc-large-btn" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}
-			</div>
+				
+			
 		</div>
 	</div>
 </div>

@@ -4,6 +4,7 @@
 }
 .pc-container .share-wrap{
 	min-width: 1000px;
+	min-height: 1300px;
 	background: url("/images/medium/share_page_bg.jpg") no-repeat center top;
 }
 .pc-container .cantent-wrap{

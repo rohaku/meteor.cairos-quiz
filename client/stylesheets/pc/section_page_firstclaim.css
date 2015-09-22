@@ -1,0 +1,24 @@
+.pc-container .first-people{
+	height: 294px;
+	background: url("/images/small/pc_you_first.png") no-repeat center top;
+}
+.pc-container .treasure-chests{
+	height: 303px;
+	background: url("/images/medium/treasure_chests.png") no-repeat center top;
+}
+.pc-container .fan.interval{
+	top:117px !important;
+}
+.pc-container .firstclaim-text{
+	text-align: center;
+	line-height: 34px;
+	font-size: 2.4rem;
+	 padding-top: 20px;
+}
+.pc-container .firstclaim-btn-box > div{
+	margin-top: 20px;
+}
+.pc-container .claim-connect-btn{
+	margin-top: 35px;
+}
+
