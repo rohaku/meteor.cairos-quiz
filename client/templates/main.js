@@ -18,6 +18,7 @@ Session.set("fbSdkLoadStatue", false);
 
 function ensureFBInit () {
     fbTrys++;
+    Session.set("isFBLoaded", false);
     if (fbTrys > 60) {
         console.log('[ensureFBInit] giving up');
         return;

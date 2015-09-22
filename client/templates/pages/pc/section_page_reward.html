@@ -1,42 +1,21 @@
 <template name="SectionPageRewardPc">
-{{>SectionPageNavbarPc}}
-<div class='share-wrap'>
-	<div class="cantent-wrap">
-		{{>SectionPageHeadPc}}
-		<div class="main-content">
-			<div class="fan"></div>
-			<div class="reward-content">
-				<h1></h1>
-				<div id='rewardPicture' class="pouch-gold"></div>
-				<h2 id='rewardDes' class='pouch-gold'></h2>
-			</div>
-            {{>yield 'quizComplete'}}
-            <!--{{#if isFBLoaded}}-->
-                <!--{{setFBLoginStatus}}-->
-                <!--{{#if isFBLogin}}-->
-                <!--<div class="share-container" id="rewardShareContainer">-->
-                    <!--<div class="code-number">012203B25JE</div>-->
-                    <!--<p>Want more prizes? <br/>-->
-                        <!--Share up this quiz for a chance to win exclusive rewards<br/>-->
-                        <!--for you and your friends!</p>-->
-                    <!--<div class="download-btn-box">-->
-                        <!--{{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-medium-btn" buttonContent="<p>SHARE UP</p>"}}{{/quizButton}}-->
-                        <!--{{#quizButton btnId="appStoreBtn" themeColor="red" customClass="pc-small-btn" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--{{else}}-->
-                <!--<div class="connect-container" id="rewardConnectContainer">-->
-                    <!--<div class="code-number">************ </div>-->
-                    <!--<p>Connect to Facebook to REVEAL your Gift Code.-->
-                    <!--</p>-->
-                    <!--{{#quizButton btnId="connectBtn" themeColor="green" customClass="pc-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}-->
-                <!--</div>-->
-                <!--{{/if}}-->
-            <!--{{else}}-->
+    {{>SectionPageNavbarPc}}
+    <div class='share-wrap'>
+        <div class="cantent-wrap">
+            {{>SectionPageHeadPc}}
+            <div class="main-content">
+                <div class="fan"></div>
+                <div class="reward-content">
+                    <h1></h1>
+                    <div id='rewardPicture' class="pouch-gold"></div>
+                    <h2 id='rewardDes' class='pouch-gold'></h2>
+                </div>
+                {{#if isFBLoaded}}
+                    {{>yield 'quizComplete'}}
+                {{/if}}
                 <!--<div class="connect-container loading"></div>-->
-            <!--{{/if}}-->
-		</div>
-	</div>
-</div>
-{{>SectionPageFooter}}
+            </div>
+        </div>
+    </div>
+    {{>SectionPageFooter}}
 </template>

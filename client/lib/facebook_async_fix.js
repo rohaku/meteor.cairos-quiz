@@ -27,6 +27,7 @@ window.fbAsyncInit = function() {
     });
     FB.getLoginStatus(function(response){
         window.facebookInited = true;
+        Session.set("isFBLoaded", true);
         console.log("FB is defined");
     });
 };
