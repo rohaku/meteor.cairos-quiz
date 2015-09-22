@@ -12,10 +12,10 @@ window.fbAsyncInit = function() {
     // PRETTY USELESS ACTUALLY for mobile
     // fb login won't work on ios devices with local app id due to some strange cordova bugs
     // so it works only for in-browser development purposes
-    var appId, urls = ['http://cairos-quiz.lab.fedeen.com', 'http://192.168.1.1'];
+    var appId, urls = ['http://cairos-quiz.lab.fedeen.com', 'http://noname/'];
     appId = Meteor.faceBookUtil.cnst.fbAppIdDevelop;
     urls.forEach(function (url) {
-        console.log(Meteor.absoluteUrl().substr(0, url.length));
+        console.log(Meteor.absoluteUrl());
         if (Meteor.absoluteUrl().substr(0, url.length) == url)
             appId = Meteor.faceBookUtil.cnst.fbAppIdProduction;
     });
