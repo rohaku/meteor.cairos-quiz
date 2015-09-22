@@ -15,6 +15,7 @@ window.fbAsyncInit = function() {
     var appId, urls = ['http://cairos-quiz.lab.fedeen.com', 'http://192.168.1.1'];
     appId = Meteor.faceBookUtil.cnst.fbAppIdDevelop;
     urls.forEach(function (url) {
+        console.log(Meteor.absoluteUrl().substr(0, url.length));
         if (Meteor.absoluteUrl().substr(0, url.length) == url)
             appId = Meteor.util.cnst.fbAppIdProduction;
     });
