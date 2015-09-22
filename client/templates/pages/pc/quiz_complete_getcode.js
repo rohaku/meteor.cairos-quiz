@@ -21,10 +21,9 @@ Template.quizCompleteGetCodePc.rendered = function(){
 
 Template.quizCompleteGetCodePc.events({
     'click #shareUpBtn': function(){
-        console.log(123);
         FB.ui({
             method: 'share',
-            href: 'http://cairosquiz.ciro.fedeen.com/reward/share'
+            href: 'http://cairos-quiz.lab.fedeen.com/'
         }, function(response){
             console.log(response)
         });
