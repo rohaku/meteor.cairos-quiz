@@ -1,0 +1,62 @@
+.friend-gift-container{
+	width: 510px;
+	margin: 20px auto;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.friend-gift-container h6{
+	font-size: 2.2rem;
+	line-height: 36px;
+}
+.friend-gift-container .swiper-container{
+	margin: 15px 0;
+	width:100%;
+	height: 285px;
+	border: 1px solid #937649;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.friend-gift-container .swiper-slide{
+	font-size:18px;
+	height:auto; 
+	padding-top: 2px;
+}
+.friend-gift-container .swiper-scrollbar{
+	border-left: 1px solid #937649;
+	height: 100% ;
+	top:0;
+	right: 0;
+	border-radius: 0px;
+	width: 10px;
+}
+.friend-gift-container .swiper-scrollbar .swiper-scrollbar-drag{
+	background-color:#ffcc00;
+	border-radius: 0px; 
+}
+.friend-gift-container table{
+	width: 450px;
+	margin: 0 auto;
+}
+.friend-gift-container table tr{
+	padding-left: 10px;
+	font-size: 2rem;
+	line-height: 68px;
+	height: 64px;
+	border-bottom: 1px dashed #937649;
+}
+.friend-gift-container table tr label{
+	color: #ffcc00;
+	text-transform: uppercase;
+}
+.friend-gift-container table tr td.friend-name{
+	width: 25%;
+	text-align: right;
+}
+.friend-gift-container table tr td.received{
+	width: 25%;
+	text-align: center;
+}
+.friend-gift-container table tr td.gift-name{
+	width: 50%;
+	text-align: left;
+}

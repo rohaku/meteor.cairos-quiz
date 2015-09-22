@@ -47,7 +47,7 @@
 	 line-height: 46px;
 	font-weight: 900;
 }
-.mobile-container .main-content ul li{
+.mobile-container .main-content ul.option-part li{
 	margin:15px auto;
 	width: 504px;
 	height: 66px;
@@ -62,12 +62,12 @@
 	cursor: pointer;
 }
 
-.mobile-container .main-content ul li.active{
+.mobile-container .main-content ul.option-part li.active{
 	background-color: #fff;
 	border-color: #fff;
 	border-radius: 30px;
 	color: #290805;
 }
-.mobile-container .main-content ul li span{
+.mobile-container .main-content ul.option-part li span{
 	padding-right: 27px;
 }

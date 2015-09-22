@@ -39,7 +39,7 @@
 	font-weight: 900;
 	font-family: 'Arial';
 }
-.pc-container .cantent-wrap ul li{
+.pc-container .cantent-wrap ul.option-part li{
 	margin:10px auto;
 	width: 550px;
 	height: 66px;
@@ -53,13 +53,13 @@
 	cursor: pointer;
 }
 
-.pc-container .cantent-wrap ul li:hover,.pc-container .cantent-wrap ul li.active{
+.pc-container .cantent-wrap ul.option-part li:hover,.pc-container .cantent-wrap ul.option-part li.active{
 	background-color: #fff;
 	border-color: #fff;
 	border-radius: 30px;
 	color: #290805;
 }
-.pc-container .cantent-wrap ul li span{
+.pc-container .cantent-wrap ul.option-part li span{
 	padding-right: 27px;
 	font-family: 'Arial';
 }

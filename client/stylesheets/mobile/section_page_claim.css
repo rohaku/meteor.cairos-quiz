@@ -1,0 +1,9 @@
+.mobile-container .claim-code-title{
+	margin-top: 60px;
+	margin-bottom: 10px;
+	height: 124px;
+	background: url("/images/small/mobile_claim_code_title.png") no-repeat center top;
+}
+.mobile-container .claim-connect-btn{
+	padding-top: 40px;
+}

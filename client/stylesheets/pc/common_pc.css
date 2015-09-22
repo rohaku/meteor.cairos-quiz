@@ -45,5 +45,5 @@
 }
 .pc-container .main-content{
 	position: relative;
-	min-height: 1200px;
+	padding-bottom: 50px;
 }
