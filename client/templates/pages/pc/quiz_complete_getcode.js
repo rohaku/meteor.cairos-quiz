@@ -23,7 +23,8 @@ Template.quizCompleteGetCodePc.events({
     'click #shareUpBtn': function(){
         var shareContext = {
             method: 'share',
-            href: 'http://121.40.55.65/default.html'        //http://cairos-quiz.lab.fedeen.com/reward/connect'
+            //href: 'http://121.40.55.65/default.html'
+            href: 'http://cairos-quiz.lab.fedeen.com/reward/connect'
         };
         console.log(shareContext);
 
