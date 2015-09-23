@@ -45,7 +45,7 @@
 }
 .pc-container .code-number{
 	padding-left: 108px;
-	margin: 60px auto 20px;
+	margin: 40px auto 20px;
 	height: 75px;
 	width: 425px;
 	border: 1px dashed #fff;
@@ -66,17 +66,7 @@
 	text-align:center;
 	padding-bottom: 20px;
 }
-.pc-container .download-btn-box{
-	padding-top: 20px;
-	width: 590px;
-	margin: 0 auto;
-}
 
-.pc-container .share-container .pc-medium-btn,
-.pc-container .share-container .pc-small-btn{
-	float: left;
-	margin-left: 10px;
-}
 .pc-container .loading{
 	width: 100%;
 	height: 350px;

@@ -88,4 +88,8 @@
 	height: 350px;
 	background: url("/common/images/loading_circle.gif") no-repeat center center;
 }
+.mobile-container .mobile-medium-btn,
+.mobile-container .mobile-small-btn{
+	margin-bottom: 20px;
+}
 

@@ -1,5 +1,6 @@
 .pc-container .answer-wrap {
 	min-width: 1000px;
+	min-height: 1300px;
 	background: url("/images/medium/question_page_bg.jpg") no-repeat center top;
 }
 .pc-container .share-wrap{
@@ -45,4 +46,16 @@
 }
 .pc-container .main-content{
 	position: relative;
+}
+.pc-container .download-btn-box{
+	padding-top: 20px;
+	width: 590px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.pc-container .download-btn-box .pc-medium-btn,
+.pc-container .download-btn-box .pc-small-btn{
+	float: left;
+	margin-left: 10px;
 }

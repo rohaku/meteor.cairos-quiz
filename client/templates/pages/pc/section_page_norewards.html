@@ -1,10 +1,21 @@
-<template name="FriendGift">
-<div class="friend-gift-container">
-	<h6>See what your friends get:</h6>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-			<table border="0" cellpadding="0" cellspacing="0" class="code-list">
+<template name="SectionPageNorewardsPc">
+{{>SectionPageNavbarPc}}
+<div class='noreward-wrap'>
+	<div class="cantent-wrap">
+		{{>SectionPageHeadPc}}
+		<div class="mian-content">
+			<h1 class='too-late-title'></h1>
+			<p class='onreward-text'>All the codes have been claimed by your friends.<br/>
+				If you want another chance to win,<br/>
+			TAKE THE QUIZ!</p>
+			 <div class="download-btn-box">
+            {{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-medium-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
+            {{#quizButton btnId="appStoreBtn" themeColor="red" customClass="pc-small-btn" buttonContent="<p><img src='/images/small/app_store.png' /></p>"}}{{/quizButton}}
+        </div>
+        <div class="see-code">
+			<h6>See what your friends get:</h6>
+			<div>
+				<table border="0" cellpadding="0" cellspacing="0" class="code-list">
 					<tbody>
 						<tr>
 							<td class='friend-name'><span>Qianxiu Yi </span></td>
@@ -56,14 +67,13 @@
 							<td class="received">received: </td>
 							<td class='gift-name'><label>a Chest of Diamondsr</label></td>
 						</tr>
-
 						
 					</tbody>
 				</table>
 			</div>
 		</div>
-		
-		<div class="swiper-scrollbar"></div>
+		</div>
 	</div>
 </div>
+{{>SectionPageFooter}}
 </template>

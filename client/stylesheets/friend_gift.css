@@ -32,33 +32,33 @@
 	background-color:#ffcc00;
 	border-radius: 0px; 
 }
-.friend-gift-container table{
+ .code-list{
 	width: 450px;
 	margin: 0 auto;
 }
-.friend-gift-container table tr{
+ .code-list tr{
 	padding-left: 10px;
 	font-size: 2rem;
 	line-height: 68px;
 	height: 64px;
 	border-bottom: 1px dashed #937649;
 }
-.friend-gift-container table tr:last-child{
+ .code-list tr:last-child{
 	border-bottom: none;
 }
-.friend-gift-container table tr label{
+ .code-list tr label{
 	color: #ffcc00;
 	text-transform: uppercase;
 }
-.friend-gift-container table tr td.friend-name{
+ .code-list tr td.friend-name{
 	width: 25%;
 	text-align: right;
 }
-.friend-gift-container table tr td.received{
+ .code-list tr td.received{
 	width: 25%;
 	text-align: center;
 }
-.friend-gift-container table tr td.gift-name{
+ .code-list tr td.gift-name{
 	width: 50%;
 	text-align: left;
 }

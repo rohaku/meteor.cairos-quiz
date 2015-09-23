@@ -7,3 +7,21 @@
 .mobile-container .claim-connect-btn{
 	padding-top: 40px;
 }
+.mobile-container .onreward-wrap{
+	width: 100%;
+	background: url("/images/medium/mobile_noreward_bg.jpg") no-repeat center top;
+}
+.mobile-container .too-late-title{
+	width: 521px;
+	height: 106px;
+	margin: 50px auto 37px;
+	background: url("/images/small/too_late.png") no-repeat center top;
+	background-size: contain;
+}
+.mobile-container .onreward-wrap .mobile-medium-btn{
+	margin-top: 73px;
+}
+.mobile-container .onreward-wrap .mobile-small-btn{
+	margin: 20px auto;
+}
+	

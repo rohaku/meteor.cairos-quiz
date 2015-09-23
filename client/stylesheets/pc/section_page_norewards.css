@@ -1,0 +1,47 @@
+.pc-container .noreward-wrap{
+	min-height: 1450px;
+	background: url("/images/medium/noreward_bg.jpg") no-repeat center top;
+}
+.pc-container .too-late-title{
+	height: 115px;
+	margin: 130px auto 50px;
+	background: url("/images/small/too_late.png") no-repeat center top;
+}
+.pc-container .noreward-wrap p{
+	padding-bottom: 80px;
+}
+.onreward-text{
+	font-size: 2.1rem;
+	text-align: center;
+	line-height: 36px;
+}
+.pc-container .noreward-wrap .pc-medium-btn,
+.pc-container .noreward-wrap .pc-small-btn{
+	float: left;
+	margin-left: 10px;
+}
+.see-code {
+	margin: 15px auto;
+	width: 510px;
+}
+.see-code h6{
+	line-height: 42px;
+	font-size: 2.1rem;
+}
+.see-code > div{
+	width: 100%;
+	height: 560px;
+	border: 1px solid #937649;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing: border-box;
+}
+.see-code .code-list tr{
+	padding-left: 10px;
+	font-size: 2rem;
+	line-height: 50px;
+	height: 50px;
+	border-bottom: 1px dashed #937649;
+}
