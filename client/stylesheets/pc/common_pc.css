@@ -16,6 +16,14 @@
 	width: 100%;
 	height: 153px;
 }
+.pc-container .main-content{
+	position: relative;
+	
+}
+.pc-container .main-content > section{
+	position: relative;
+	z-index: 9;
+}
 .pc-container .head-content .logo-part{
 	float: left;
 	margin: 28px 0 0 26px;
@@ -44,9 +52,7 @@
 	color: #fff;
 	text-align: center;
 }
-.pc-container .main-content{
-	position: relative;
-}
+
 .pc-container .download-btn-box{
 	padding-top: 20px;
 	width: 590px;

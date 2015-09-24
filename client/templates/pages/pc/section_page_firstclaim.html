@@ -3,18 +3,20 @@
 <div class='share-wrap'>
 	<div class="cantent-wrap">
 		{{>SectionPageHeadPc}}
-		<div class="mian-content">
-			<div class="fan interval"></div>
-			<div class="first-people"></div>
-			<div class="treasure-chests"></div>
-			<p class='firstclaim-text'>To claim your code<br/>
-			Please connect to your Facebook account </p>
-			<div class="firstclaim-btn-box">
-				{{#quizButton btnId="connect" themeColor="red" customClass="pc-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
-				<p class='firstclaim-text'>OR</p>
-				{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="pc-large-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
-				{{#quizButton btnId="appStore" themeColor="red" customClass="pc-large-btn" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}
-			</div>
+		<div class="main-content">
+			<div class="fan"></div>
+			<section>
+				<div class="first-people"></div>
+				<div class="treasure-chests"></div>
+				<p class='firstclaim-text'>To claim your code<br/>
+				Please CONNECT to your Facebook account </p>
+				<div class="firstclaim-btn-box">
+					{{#quizButton btnId="connect" themeColor="red" customClass="pc-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
+					<p class='firstclaim-text'>OR</p>
+					{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="pc-large-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
+					{{#quizButton btnId="appStore" themeColor="red" customClass="pc-large-btn" buttonContent="<p><img src='images/small/app_store.png' /></p>"}}{{/quizButton}}
+				</div>
+			</section>
 		</div>
 	</div>
 </div>

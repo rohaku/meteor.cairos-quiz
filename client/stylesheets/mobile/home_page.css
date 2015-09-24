@@ -24,6 +24,10 @@
 	margin: auto;
 	padding-bottom: 60px;
 }
+.mobile-container .main-content > section{
+	position: relative;
+	z-index: 9;
+}
 .mobile-container .home-page-title{
 	margin:50px auto 30px;
 	width: 632px;

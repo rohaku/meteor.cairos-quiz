@@ -1,9 +1,11 @@
 .pc-container .claim-cont{
+	position: relative;
+	z-index: 9;
+	 padding-top: 97px;
 	min-height: 1200px;
 }
 
 .pc-container .claim-code-title{
-	margin-top: 97px;
 	margin-bottom: 20px;
 	height: 120px;
 	background: url("/images/small/claim_code_title.png") no-repeat center top;

@@ -6,9 +6,7 @@
 	height: 303px;
 	background: url("/images/medium/treasure_chests.png") no-repeat center top;
 }
-.pc-container .fan.interval{
-	top:117px !important;
-}
+
 .pc-container .firstclaim-text{
 	text-align: center;
 	line-height: 34px;
