@@ -48,3 +48,10 @@
 	color: #fff;
 	text-align: center;
 }
+.mobile-container .alert_style {
+    position: absolute;
+    left: 50%;
+    margin-left: -375px;
+    top: 50%;
+    margin-top: -210px;
+}
