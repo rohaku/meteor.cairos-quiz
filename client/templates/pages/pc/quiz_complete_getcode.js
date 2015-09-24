@@ -26,15 +26,14 @@ Template.quizCompleteGetCodePc.events({
         var shareContext = {
             method: 'share',
             //href: 'http://121.40.55.65/default.html'
-            href: 'http://cairosquiz.ciro.fedeen.com/shareFB/' + queryParam
+            href: 'http://cairos-quiz.lab.fedeen.com/shareQuiz/' + queryParam
             //href: 'http://iron-router-meta.meteor.com/thirdPage/5'
         };
-        console.log(shareContext);
 
-        Router.go('server.share', {answerInfo: queryParam});
-        return;
         FB.ui(shareContext, function(response){
-            console.log(response)
+            if(typeof(response.error_code) == "undefined"){
+                Router.go('reward.thanks');
+            }
         });
     }
 });

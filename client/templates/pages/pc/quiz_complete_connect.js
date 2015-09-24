@@ -6,12 +6,7 @@ Template.quizCompleteConnectPc.events({
         var answerCache = Router.current().params.hash;
 
         FB.getLoginStatus(function (response) {
-            if (response.status === 'connected') {
-
-            } else if (response.status === 'not_authorized') {
-                // the user is logged in to Facebook,
-                // but has not authenticated your app
-            } else {
+            if (response.status !== 'connected') {
                 FB.login(function(loginRes){
                     if (loginRes.status === 'connected') {
                         var uid = loginRes.authResponse.userID;

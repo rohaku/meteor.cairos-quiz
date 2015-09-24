@@ -18,4 +18,3 @@ if(process.env.NODE_ENV == 'production' || process.env.PRODUCTION){
     _ENV_ = 'development';
 }
 
-FB_DEVELOPER_INFO = __ENVCONFIG__[_ENV_];
