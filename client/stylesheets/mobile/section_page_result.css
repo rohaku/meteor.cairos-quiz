@@ -59,8 +59,8 @@
 
 .mobile-container .result-show #heroesImg.frog {
 	width: 263px;
-	height:325px; 
-	background: url("/images/medium/yoga_frog.png") no-repeat center 74px;
+	height:326px; 
+	background: url("/images/medium/yoga_frog.png") no-repeat center 10px;
 	background-size:contain;
 }
 

@@ -33,7 +33,7 @@ Template.SectionPageAnswerMobile.rendered = function() {
 			if (ind == answerListData.length) {
 
             //answerListData.length
-			
+			console.log(total);
 				$('form').submit(function() {
 					$('input').val(total);
 
@@ -44,6 +44,7 @@ Template.SectionPageAnswerMobile.rendered = function() {
                     fbUserName : "",
                     totalScore : total
                 };
+
 
                 Meteor.call("getAnswerResult", postParams, function(error, result){
                     if(error){
