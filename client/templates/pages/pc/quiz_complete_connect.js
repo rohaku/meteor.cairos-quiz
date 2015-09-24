@@ -3,14 +3,10 @@
  */
 Template.quizCompleteConnectPc.events({
     'click div#connectBtn': function (event) {
+        var answerCache = Router.current().params.hash;
+
         FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {
-                console.log('Logged in.');
-                var uid = response.authResponse.userID;
-                var accessToken = response.authResponse.accessToken;
-
-                console.log(uid);
-                console.log(accessToken);
 
             } else if (response.status === 'not_authorized') {
                 // the user is logged in to Facebook,
@@ -24,7 +20,7 @@ Template.quizCompleteConnectPc.events({
                         console.log(uid);
                         console.log(accessToken);
 
-                        Router.go('result.reward', {resultBranch: "share"});
+                        Router.go('result.reward', {resultBranch: "share"}, {hash: answerCache});
                     }
                 });
             }

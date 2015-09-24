@@ -12,9 +12,10 @@ Handlebars.registerHelper('isMobile', function () {
     }
 });
 
+//FaceBook SDK base Configuration
 var fbTrys = 0;
 
-Session.set("fbSdkLoadStatue", false);
+//Session.set("fbSdkLoadStatue", false);
 
 function ensureFBInit () {
     fbTrys++;
@@ -31,7 +32,7 @@ function ensureFBInit () {
     if (!window.facebookInitStarted){
         window.fbAsyncInit();
     }
-    Session.set("fbSdkLoadStatue", true);
+    //Session.set("fbSdkLoadStatue", true);
 }
 
 Meteor.startup(function () {

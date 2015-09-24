@@ -3,9 +3,9 @@
  */
 Template.quizCompleteGetCodePc.rendered = function(){
     Meteor.startup(function(){
+        var resultUrlCache = Router.current().params.hash;
         FB.getLoginStatus(function(response){
             if(response.status == "connected"){
-                console.log(HTTP);
                 var uid = response.authResponse.userID;
                 var accessToken = response.authResponse.accessToken;
                 console.log(uid);
@@ -13,7 +13,7 @@ Template.quizCompleteGetCodePc.rendered = function(){
 
                 Meteor.call("makeShareCodeInfo");
             }else{
-                Router.go('result.reward', {resultBranch: "connect"});
+                Router.go('result.reward', {resultBranch: "connect"}, {hash: resultUrlCache});
             }
         });
     });
@@ -21,13 +21,18 @@ Template.quizCompleteGetCodePc.rendered = function(){
 
 Template.quizCompleteGetCodePc.events({
     'click #shareUpBtn': function(){
+        var resultUrlCache = Router.current().params.hash;
+        var queryParam = resultUrlCache;
         var shareContext = {
             method: 'share',
             //href: 'http://121.40.55.65/default.html'
-            href: 'http://cairos-quiz.lab.fedeen.com/reward/connect'
+            href: 'http://cairosquiz.ciro.fedeen.com/shareFB/' + queryParam
+            //href: 'http://iron-router-meta.meteor.com/thirdPage/5'
         };
         console.log(shareContext);
 
+        Router.go('server.share', {answerInfo: queryParam});
+        return;
         FB.ui(shareContext, function(response){
             console.log(response)
         });

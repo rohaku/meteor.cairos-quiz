@@ -4,24 +4,24 @@ Template.SectionPageResultPc.events({
     },
 
     'click div#claimRewardBtn': function(event){
+        var routerHash = $("#resultHashCache").data("resultCacheHash");
+
         FB.getLoginStatus(function(response){
             if (response.status === 'connected') {
-                Router.go('result.reward', {resultBranch: "share"});
+                Router.go('result.reward', {resultBranch: "share"}, {hash: routerHash});
             }else{
-                Router.go('result.reward', {resultBranch: "connect"});
+                Router.go('result.reward', {resultBranch: "connect"}, {hash: routerHash});
             }
         });
     }
 
 });
+
 Template.SectionPageResultPc.rendered = function(){
-
-    var myAnswerResult = Session.get('quizAnswerResult');
-    if(typeof(myAnswerResult) == "undefined"){
+    try{
+        //获取用户答题后的结果并分配显示
+        Meteor.call("makeResultRender");
+    }catch(e){
         Router.go('answer.do');
-        return false;
     }
-
-    //获取用户答题后的结果并分配显示
-    Meteor.call("makeResultRender", myAnswerResult);
 };
