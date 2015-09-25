@@ -3,7 +3,7 @@ Template.SectionPageResultMobile.events({
        Router.go('answer.do');
     },
 
-     'click div#claimRewardBtn': function(event){
+    /* 'click div#claimRewardBtn': function(event){
          FB.getLoginStatus(function(response){
              if (response.status === 'connected') {
                  Router.go('result.reward', {resultBranch: "share"});
@@ -11,17 +11,14 @@ Template.SectionPageResultMobile.events({
                  Router.go('result.reward', {resultBranch: "connect"});
              }
          });
-     }
+     }*/
 
 });
 Template.SectionPageResultMobile.rendered = function(){
-
-    var myAnswerResult = Session.get('quizAnswerResult');
-    if(typeof(myAnswerResult) == "undefined"){
+    try{
+        //获取用户答题后的结果并分配显示
+        Meteor.call("makeResultRender");
+    }catch(e){
         Router.go('answer.do');
-        return false;
     }
-
-    //获取用户答题后的结果并分配显示
-    Meteor.call("makeResultRender", myAnswerResult);
 };
