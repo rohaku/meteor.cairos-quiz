@@ -3,15 +3,15 @@ Template.SectionPageResultMobile.events({
        Router.go('answer.do');
     },
 
-    // 'click div#claimRewardBtn': function(event){
-    //     FB.getLoginStatus(function(response){
-    //         if (response.status === 'connected') {
-    //             Router.go('result.reward', {resultBranch: "share"});
-    //         }else{
-    //             Router.go('result.reward', {resultBranch: "connect"});
-    //         }
-    //     });
-    // }
+     'click div#claimRewardBtn': function(event){
+         FB.getLoginStatus(function(response){
+             if (response.status === 'connected') {
+                 Router.go('result.reward', {resultBranch: "share"});
+             }else{
+                 Router.go('result.reward', {resultBranch: "connect"});
+             }
+         });
+     }
 
 });
 Template.SectionPageResultMobile.rendered = function(){

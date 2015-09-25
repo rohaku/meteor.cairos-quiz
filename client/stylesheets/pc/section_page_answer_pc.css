@@ -19,11 +19,17 @@
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
-	height: 600px;
+	height: 510px;
+}
+.pc-container .cantent-wrap form p{
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 26px;
+	height: 200px;
 }
 .pc-container .cantent-wrap .answer-list{
+	float: left;
 	width: 100%;
-	height: 100%;
 }
 
 .pc-container .cantent-wrap .answer-list h1{

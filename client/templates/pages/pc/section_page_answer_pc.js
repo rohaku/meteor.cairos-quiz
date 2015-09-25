@@ -201,11 +201,10 @@ Template.SectionPageAnswerPc.helpers({
 Template.SectionPageAnswerPc.rendered = function() {
 
 	$(function() {
-        //logoutFB
-        try {
-            FB.XFBML.parse();
-        }catch(e) {
-        }
+		//logoutFB
+		try {
+			FB.XFBML.parse();
+		} catch (e) {}
 
 
 		$('.video-part').hide();
@@ -225,7 +224,7 @@ Template.SectionPageAnswerPc.rendered = function() {
 			$(this).addClass('active');
 			total += parseInt($(this).attr("value"));
 			ind = $(this).parents("section").index();
-
+			$(this).parents('form').find('p').find('label').html(ind + 1);
 			var $this = $(this);
 			setTimeout(function() {
 				$this.parents("section").fadeOut(500, function() {
@@ -233,26 +232,26 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 
-            var lastIdx = 2;/*answerListData.length*/
+			var lastIdx = 2; /*answerListData.length*/
 			if (ind == lastIdx) {
-                var postParams = {
-                    fbUserName : "",
-                    totalScore : total
-                };
+				var postParams = {
+					fbUserName: "",
+					totalScore: total
+				};
 
-                FB.getLoginStatus(function (response) {
-                    if (response.status === 'connected') {
-                        //console.log("you are logined")
-                    }else{
-                        //console.log("u are not login");
-                    }
-                });
+				FB.getLoginStatus(function(response) {
+					if (response.status === 'connected') {
+						//console.log("you are logined")
+					} else {
+						//console.log("u are not login");
+					}
+				});
 
-                Meteor.call("getAnswerResult", postParams, function(error, result){
-                    if(error){
-                        return alert(error.reason);
-                    }
-                });
+				Meteor.call("getAnswerResult", postParams, function(error, result) {
+					if (error) {
+						return alert(error.reason);
+					}
+				});
 
 			};
 		});
