@@ -10,7 +10,6 @@ Template.quizCompleteGetCodePc.rendered = function(){
                 var accessToken = response.authResponse.accessToken;
                 console.log(response);
 
-                $("#rewardShareContainer").data("referId", uid);
 
                 var httpParams = {};
                 FB.api('/me', function(profile) {
@@ -36,6 +35,7 @@ Template.quizCompleteGetCodePc.events({
     'click #shareUpBtn': function(){
         var resultUrlCache = Router.current().params.hash;
         var fbShareUserId = $("#rewardShareContainer").data("referId");
+
         Meteor.call("clickShareButton", resultUrlCache, fbShareUserId);
 
     }

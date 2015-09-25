@@ -18,20 +18,14 @@ Router.route('/getQuizCode', function () {
 
 }, {where: 'server'});
 
-Router.route('/checkQuizStatue', function () {
+Router.route('/getShareQuizCode', function () {
     var req = this.request;
     var res = this.response;
 
     res.setHeader("Content-Type", "application/json, charset=utf-8");
-
     var _getParams_ = req.body;
-    var _getParams_ = {
-        "game" : 'cairos',
-        "referral" : '1472046509770687'
-    }
 
-
-    HTTP.call('GET', _SERVICE_URL_ + "spread", {params:_getParams_}, function(error, result){
+    HTTP.call('GET', _SERVICE_URL_ + "connect", {params:_getParams_}, function(error, result){
         res.end(JSON.stringify(result.data) + '\n');
     });
 
@@ -52,8 +46,9 @@ Router.route('/shareQuiz/:answerInfo', function(){
         isTwiiterReq = req.headers['user-agent'].indexOf(Meteor.twitterUtil.uaFlag) !== -1;
     }
 
+    var resultUrlCache = Base64.decode(params64);
     if(isFaceBookReq){
-        var resultUrlCache = Base64.decode(params64);
+        //Todo this is the method of Facebook Sdk will be call what to use share in FB's feed.
         var anwserResult = Meteor.call("getAnswerResultByUrl", resultUrlCache);
         res.write('<!DOCTYPE html>\n');
         res.write('<html>\n');
@@ -76,13 +71,36 @@ Router.route('/shareQuiz/:answerInfo', function(){
 
         res.write('\t</body>\n');
         res.write('</html>');
+        res.end();
     }else if(isTwiiterReq){
-        //Todo if need twitter sdk do ...
+        //Todo if need twitter sdk to do something
     }else{
-        res.writeHead(302, {
-            'Location': '/claimcode.html#' + params64
+        //Todo check the status of FB's user get the quiz's code .
+        var referral = resultUrlCache.split(_URL_SPLIT_WORDS_)[1];
+
+        var _getHttpParams_ = {
+            "game" : 'cairos',
+            "referral" : referral
+        };
+
+        HTTP.call('GET', _SERVICE_URL_ + "spread", {params:_getHttpParams_}, function(error, result){
+            var getData = result.data.referees;
+            var pageHash = referral + _URL_SPLIT_WORDS_;
+
+            if(getData.length <= 0){
+                pageHash += "first";
+            }else if(getData.length > 0 && getData.length < 10){
+                pageHash += "normal";
+            }else{
+                pageHash += "last";
+            }
+
+            res.writeHead(302, {
+                'Location': '/claimcode.html#' + Base64.encode(pageHash)
+            });
+            res.end();
         });
     }
 
-    res.end();
+
 }, {name: 'server.share',where: 'server'});

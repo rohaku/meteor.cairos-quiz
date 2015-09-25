@@ -39,7 +39,7 @@ Template.SectionPageAnswerPc.rendered = function() {
 				});
 			}, 200);
 			$(this).parents('form').find('p').find('label').html(ind + 1);
-			var lastIdx = 2; /*answerListData.length*/
+			var lastIdx = answerListData.length; /*answerListData.length*/
 			if (ind == lastIdx) {
 				var postParams = {
 					fbUserName: "",

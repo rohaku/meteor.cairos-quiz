@@ -17,7 +17,7 @@ Template.quizCompleteConnectPc.events({
 
                         Router.go('result.reward', {resultBranch: "share"}, {hash: answerCache});
                     }
-                });
+                }, {scope: 'public_profile,email'});
             }
         });
     }

@@ -1,22 +1,41 @@
 <template name="SectionPageFirstclaimPc">
+{{#if isFBLoaded}}
+    {{displayContent}}
+{{/if}}
 {{>SectionPageNavbarPc}}
 <div class='share-wrap'>
 	<div class="cantent-wrap">
-		{{>SectionPageHeadPc}}
+        {{>SectionPageHeadPc}}
 		<div class="main-content">
 			<div class="fan"></div>
-			<section>
+			<section id="claimContent" style="display:none;">
 				<div class="first-people"></div>
 				<div class="treasure-chests"></div>
-				<p class='firstclaim-text'>To claim your code<br/>
-				Please CONNECT to your Facebook account </p>
+				<p class='firstclaim-text'>
+                    To claim your code<br/>
+				    Please CONNECT to your Facebook account
+                </p>
 				<div class="firstclaim-btn-box">
-					{{#quizButton btnId="connect" themeColor="red" customClass="pc-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
+					{{#quizButton btnId="connectShareQuizCode" themeColor="red" customClass="pc-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
 					<p class='firstclaim-text'>OR</p>
 					{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="pc-large-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
 					{{#quizButton btnId="appStore" themeColor="red" customClass="pc-large-btn" buttonContent="<p><a href='https://itunes.apple.com/app/id981481859' target='_blank'><img src='images/small/app_store.png' /></a></p>"}}{{/quizButton}}
 				</div>
 			</section>
+            {{>SectionPageGiftcodePc}}
+            <!--<section id="claimCodeResult" style="display:none;">-->
+                <!--<div class="reward-content">-->
+                    <!--<h1></h1>-->
+                    <!--<div id='rewardPicture' class="pouch-gold"></div>-->
+                    <!--<h2 id='rewardDes' class='pouch-gold'></h2>-->
+                <!--</div>-->
+                <!--<div class="code-number" id="claimCodeNumber">{CODE}</div>-->
+                <!--{{>FriendGift}}-->
+                <!--<div class="download-btn-box">-->
+                    <!--{{#quizButton btnId="shareUpBtn" themeColor="green" customClass="pc-medium-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}-->
+                    <!--{{#quizButton btnId="appStoreBtn" themeColor="red" customClass="pc-small-btn" buttonContent="<p><img src='/images/small/app_store.png' /></p>"}}{{/quizButton}}-->
+                <!--</div>-->
+            <!--</section>-->
 		</div>
 	</div>
 </div>
