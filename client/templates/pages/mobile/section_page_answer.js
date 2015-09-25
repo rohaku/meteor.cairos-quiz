@@ -50,7 +50,6 @@ Template.SectionPageAnswerMobile.rendered = function() {
 						//console.log("u are not login");
 					}
 				});
-				console.log(postParams);
 
 				Meteor.call("getAnswerResult", postParams, function(error, result) {
 					if (error) {
