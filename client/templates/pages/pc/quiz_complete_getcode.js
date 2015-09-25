@@ -8,10 +8,23 @@ Template.quizCompleteGetCodePc.rendered = function(){
             if(response.status == "connected"){
                 var uid = response.authResponse.userID;
                 var accessToken = response.authResponse.accessToken;
-                console.log(uid);
-                console.log(accessToken);
+                console.log(response);
 
-                Meteor.call("makeShareCodeInfo");
+                $("#rewardShareContainer").data("referId", uid);
+
+                var httpParams = {};
+                FB.api('/me', function(profile) {
+                    //callback(response);
+                    httpParams = {
+                        game: "cairos",
+                        email: profile.email,
+                        facebook_id: profile.id,
+                        facebook_token: accessToken,
+                        facebook_profile: profile
+                    };
+                    Meteor.call("makeQuizCodeInfo", httpParams);
+                });
+
             }else{
                 Router.go('result.reward', {resultBranch: "connect"}, {hash: resultUrlCache});
             }
@@ -22,19 +35,9 @@ Template.quizCompleteGetCodePc.rendered = function(){
 Template.quizCompleteGetCodePc.events({
     'click #shareUpBtn': function(){
         var resultUrlCache = Router.current().params.hash;
-        var queryParam = resultUrlCache;
-        var shareContext = {
-            method: 'share',
-            //href: 'http://121.40.55.65/default.html'
-            href: 'http://cairos-quiz.lab.fedeen.com/shareQuiz/' + queryParam
-            //href: 'http://iron-router-meta.meteor.com/thirdPage/5'
-        };
+        var fbShareUserId = $("#rewardShareContainer").data("referId");
+        Meteor.call("clickShareButton", resultUrlCache, fbShareUserId);
 
-        FB.ui(shareContext, function(response){
-            if(typeof(response.error_code) == "undefined"){
-                Router.go('reward.thanks');
-            }
-        });
     }
 });
 
