@@ -19,7 +19,7 @@
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
-	height: 510px;
+	height: 450px;
 }
 .pc-container .cantent-wrap form p{
 	text-align: center;
@@ -44,6 +44,9 @@
 	font-size: 2.5rem;
 	font-weight: 900;
 	font-family: 'Arial';
+}
+.pc-container .cantent-wrap ul.option-part{
+	padding-bottom: 50px;
 }
 .pc-container .cantent-wrap ul.option-part li{
 	margin:10px auto;

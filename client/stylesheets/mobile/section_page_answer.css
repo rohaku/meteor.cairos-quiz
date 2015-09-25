@@ -1,8 +1,4 @@
-.mobile-container .answer-page-bg{
-	height: 100%;
-	width: 100%;
-	background:url("images/medium/mobile_answer_page_bg.png") no-repeat center top;
-}
+
 .mobile-container .main-content .qustion-nav{
 	width:654px;
 	height:137px;
@@ -26,7 +22,7 @@
 	color: #fff;
 	font-family: 'Arial';
 	text-align: center;
-	height: 635px;
+	height: 550px;
 }
 .mobile-container .main-content .answer-list{
 	width: 100%;

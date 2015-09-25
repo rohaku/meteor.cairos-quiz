@@ -224,14 +224,14 @@ Template.SectionPageAnswerPc.rendered = function() {
 			$(this).addClass('active');
 			total += parseInt($(this).attr("value"));
 			ind = $(this).parents("section").index();
-			$(this).parents('form').find('p').find('label').html(ind + 1);
+
 			var $this = $(this);
 			setTimeout(function() {
 				$this.parents("section").fadeOut(500, function() {
 					$this.parents("section").next().fadeIn();
 				});
 			}, 200);
-
+			$(this).parents('form').find('p').find('label').html(ind + 1);
 			var lastIdx = 2; /*answerListData.length*/
 			if (ind == lastIdx) {
 				var postParams = {

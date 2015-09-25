@@ -14,11 +14,7 @@
 	background:url("images/medium/mobile_result_page_bg.jpg") no-repeat center top;
 
 }
-.mobile-container .home-page-bg{
-	height: 100%;
-	width: 100%;
-	background:url("images/medium/mobile_home_page_bg.png") no-repeat center top;
-}
+
 .mobile-container .main-content{
 	width: 100%;
 	margin: auto;

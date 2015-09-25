@@ -1,7 +1,6 @@
 <template name="SectionPageAnswerMobile">
 {{>SectionPageNavbarMobile}}
 <div class="answer-wrap">
-	<div class="answer-page-bg">
 		{{>SectionPageHeadMobile}}
 		<div class="main-content">
 			<div class="home-page-title"></div> 
@@ -12,7 +11,6 @@
 			<input type="hidden" value="" name='total'/>
 			{{#each eachAnswer}}
 				<section class="answer-list">
-					<h1>{{name}}</h1>
 					<div class='qustion-title'>{{title}}</div>
 					<ul class='option-part'>
 					{{#each option}}
@@ -26,7 +24,7 @@
 			<p>(<label>1</label>/8)</p>
 			</form>
 		</div>
-	</div>
+	
 </div>
 {{>SectionPageFooter}}
 </template>
