@@ -26,7 +26,6 @@ Template.quizButton.events({
             if (response.status === 'connected') {
                 //Router.go('firstclaim.giftcode', {},{hash: urlHash});
                 Meteor.call("makeFriendQuizCodeInfo", quizReferId);
-                console.log(urlHash);
             } else {
                 FB.login(function(loginRes){
                     if (loginRes.status === 'connected') {

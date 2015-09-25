@@ -10,6 +10,3 @@ Template.SectionPageFirstclaimPc.helpers({
         $("#claimContent").show();
     }
 });
-
-Template.SectionPageFirstclaimPc.events({
-});

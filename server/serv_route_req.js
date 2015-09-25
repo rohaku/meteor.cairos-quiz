@@ -32,6 +32,25 @@ Router.route('/getShareQuizCode', function () {
 
 }, {where: 'server'});
 
+Router.route('/getFriendList', function () {
+    var req = this.request;
+    var res = this.response;
+
+    res.setHeader("Content-Type", "application/json, charset=utf-8");
+    var _getParams_ = req.body;
+
+    var _getHttpParams_ = {
+        "game" : 'cairos',
+        "referral" : _getParams_.referral //referral
+    };
+
+    HTTP.call('GET', _SERVICE_URL_ + "spread", {params:_getHttpParams_}, function(error, result){
+        res.end(JSON.stringify(result.data) + '\n');
+    });
+
+
+}, {where: 'server'});
+
 Router.route('/shareQuiz/:answerInfo', function(){
     var req = this.request;
     var res = this.response;
@@ -80,7 +99,7 @@ Router.route('/shareQuiz/:answerInfo', function(){
 
         var _getHttpParams_ = {
             "game" : 'cairos',
-            "referral" : referral
+            "referral" : referral //referral
         };
 
         HTTP.call('GET', _SERVICE_URL_ + "spread", {params:_getHttpParams_}, function(error, result){
@@ -90,7 +109,7 @@ Router.route('/shareQuiz/:answerInfo', function(){
             if(getData.length <= 0){
                 pageHash += "first";
             }else if(getData.length > 0 && getData.length < 10){
-                pageHash += "normal";
+                pageHash += "normal";       //normal
             }else{
                 pageHash += "last";
             }

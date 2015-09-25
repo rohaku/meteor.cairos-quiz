@@ -3,10 +3,5 @@
  */
 
 Template.layoutPc.rendered = function(){
-    $(function(){
-        //服务端的ajax调用
-        //$.post("/test", {a:1},function(data){
-        //    console.log(data);
-        //});
-    });
+    console.log("测试版本信息：1.0.1")
 };
