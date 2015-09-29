@@ -27,7 +27,7 @@ Template.quizCompleteGetCodePc.rendered = function(){
             }else{
                 Router.go('result.reward', {resultBranch: "connect"}, {hash: resultUrlCache});
             }
-        });
+        }, {scope: 'public_profile,email'});
     });
 };
 
