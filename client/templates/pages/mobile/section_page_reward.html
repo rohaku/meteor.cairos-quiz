@@ -5,14 +5,19 @@
 	<div class="main-content">
 		<div class="fan"></div>
 		<section>
-		<div class="reward-content">
-			<h1></h1>
-			<div id='rewardPicture' class="pouch-gold"></div>
-			<h2 id='rewardDes' class='pouch-gold'></h2>
-		</div>
-                {{#if isFBLoaded}}
-                {{>yield 'quizComplete'}}
-                {{/if}}
+			<div class="reward-content">
+				<h1></h1>
+				<div id='rewardPicture' class="pouch-gold"></div>
+				<h2 id='rewardDes' class='pouch-gold'></h2>
+			</div>
+			{{#if connectPage}}
+			{{#if isFBLoaded}}
+			{{>yield 'quizComplete'}}
+			{{/if}}
+			{{else}}
+			{{>yield 'quizGetCode'}}
+			{{/if}}
+			<!-- <div class="loading" ></div> -->
 		</section>
 	</div>
 	

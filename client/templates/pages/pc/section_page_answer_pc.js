@@ -36,9 +36,10 @@ Template.SectionPageAnswerPc.rendered = function() {
 			setTimeout(function() {
 				$this.parents("section").fadeOut(500, function() {
 					$this.parents("section").next().fadeIn();
+					$this.parents('form').find('p').find('label').html(ind + 1);
 				});
-			}, 200);
-			$(this).parents('form').find('p').find('label').html(ind + 1);
+			}, 600);
+			
 			var lastIdx = 8; /*answerListData.length*/
 			if (ind == lastIdx) {
 				var postParams = {

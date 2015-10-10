@@ -9,8 +9,9 @@ Router.route('/getQuizCode', function () {
     var res = this.response;
 
     res.setHeader("Content-Type", "application/json, charset=utf-8");
-
     var _getParams_ = req.body;
+    console.log(_SERVICE_URL_);
+    
     HTTP.call('GET', _SERVICE_URL_ + "connect", {params:_getParams_}, function(error, result){
         res.end(JSON.stringify(result.data) + '\n');
     });

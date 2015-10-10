@@ -34,7 +34,7 @@ Template.SectionPageAnswerMobile.rendered = function() {
 					$this.parents("section").next().fadeIn();
 					$this.parents('form').find('p').find('label').html(ind + 1);
 				});
-			}, 200);
+			}, 600);
 			
 			
 			if (ind == answerListData.length) {
