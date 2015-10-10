@@ -7,11 +7,7 @@ Template.SectionPageResultPc.events({
         var routerHash = $("#resultHashCache").data("resultCacheHash");
 
         FB.getLoginStatus(function(response){
-            if (response.status === 'connected') {
-                Router.go('result.reward', {resultBranch: "share"}, {hash: routerHash});
-            }else{
-                Router.go('result.reward', {resultBranch: "connect"}, {hash: routerHash});
-            }
+            Router.go('result.reward', {resultBranch: "connect"}, {hash: routerHash});
         });
     }
 

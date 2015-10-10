@@ -15,6 +15,21 @@ Template.quizCompleteConnectPc.events({
                         Router.go('result.reward', {resultBranch: "share"}, {hash: answerCache});
                     }
                 }, {scope: 'public_profile,email'});
+            }else{
+                var accessToken = response.authResponse.accessToken;
+                var httpParams = {};
+                FB.api('/me', function(profile) {
+                    httpParams = {
+                        game: "cairos",
+                        email: profile.email,
+                        facebook_id: profile.id,
+                        facebook_token: accessToken,
+                        facebook_profile: profile,
+                        resultBranch: "share",
+                        paramHash:answerCache
+                    };
+                    Meteor.call("makeQuizCodeInfoByConnect", httpParams);
+                });
             }
         });
     }
