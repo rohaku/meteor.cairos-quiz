@@ -1,23 +1,29 @@
 <template name="SectionPageClaimMobile">
-{{>SectionPageNavbarMobile}}
-<div class="reuslt-wrap">
-	{{>SectionPageHeadMobile}}
-	<div class="main-content">
-		<div class="fan"></div>
-		<section>
-			<div class="claim-code-title"></div>
-			<div class="treasure-chests"></div>
-			<p class='firstclaim-text'>Please CONNECT to  your Facebook account </p>
-			<div class="claim-connect-btn">
-				{{#quizButton btnId="connect" themeColor="red" customClass="mobile-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
-			</div>
-			{{>FriendGift}}
-			
-			{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mobile-large-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
-		</section>
+	{{#if isFBLoaded}}
+	{{displayContent}}
+	{{/if}}
+	{{>SectionPageNavbarMobile}}
+	<div class="reuslt-wrap">
+		{{>SectionPageHeadMobile}}
+		<div class="main-content">
+			<div class="fan"></div>
+			<section id="claimContent" style="display:none;">
+				<div class="claim-code-title"></div>
+				<div class="treasure-chests"></div>
+				<p class='firstclaim-text'>Please CONNECT to  your Facebook account </p>
+				<div class="claim-connect-btn">
+					{{#quizButton btnId="connectShareQuizCode" themeColor="red" customClass="mobile-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
+				</div>
+				{{#if hasGotFriendList}}
+				{{>FriendGift}}
+				{{/if}}
+				
+				{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mobile-large-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
+			</section>
+			{{>SectionPageGiftcodeMobile}}
+		</div>
+		
 	</div>
-	
-</div>
-{{>VideoPopupMobile}}
-{{>SectionPageFooter}}
+	{{>VideoPopupMobile}}
+	{{>SectionPageFooter}}
 </template>

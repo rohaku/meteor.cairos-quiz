@@ -1,21 +1,25 @@
 <template name="SectionPageFirstclaimMobile">
+{{#if isFBLoaded}}
+    {{displayContent}}
+{{/if}}
 {{>SectionPageNavbarMobile}}
 <div class="reuslt-wrap">
 	{{>SectionPageHeadMobile}}
 	<div class="main-content">
 		<div class="fan"></div>
-		<section>
+		<section id="claimContent" style="display:none;">
 			<div class="first-people"></div>
 			<div class="treasure-chests"></div>
 			<p class='firstclaim-text'>To claim your code<br/>
 			Please CONNECT to your Facebook account </p>
 			<div class="firstclaim-btn-box">
-				{{#quizButton btnId="connect" themeColor="red" customClass="mobile-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
+				{{#quizButton btnId="connectShareQuizCode" themeColor="red" customClass="mobile-large-btn" buttonContent="<p>CONNECT</p>"}}{{/quizButton}}
 				<p class='firstclaim-text'>OR</p>
 				{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mobile-large-btn" buttonContent="<p>TAKE&nbsp THE&nbsp QUIZ</p>"}}{{/quizButton}}
 				{{#quizButton btnId="appStore" themeColor="red" customClass="mobile-large-btn" buttonContent="<p><a href='https://itunes.apple.com/app/id981481859' target='_blank'><img src='/images/small/app_store.png' /></a></p>"}}{{/quizButton}}
 			</div>
 		</section>
+		{{>SectionPageGiftcodeMobile}}
 	</div>
 	
 </div>

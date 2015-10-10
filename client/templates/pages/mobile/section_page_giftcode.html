@@ -1,23 +1,15 @@
 <template name="SectionPageGiftcodeMobile">
-{{>SectionPageNavbarMobile}}
-<div class="reuslt-wrap">
-	{{>SectionPageHeadMobile}}
-	<div class="main-content">
-		<div class="fan"></div>
-		<section>
-			<div class="reward-content">
-				<h1></h1>
-				<div id='rewardPicture' class="pouch-gold"></div>
-				<h2 id='rewardDes' class='pouch-gold'></h2>
-			</div>
-			<div class="code-number">012203B25JE</div>
-			{{>FriendGift}}
-			{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mobile-medium-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
-			{{#quizButton btnId="appStoreBtn" themeColor="red" customClass="mobile-small-btn" buttonContent="<p><a href='https://itunes.apple.com/app/id981481859' target='_blank'><img src='/images/small/app_store.png' /></a></p>"}}{{/quizButton}}
-		</section>
+<section id="claimCodeResult" style="display:none;">
+	<div class="reward-content">
+		<h1></h1>
+		<div id='rewardPicture' class="pouch-gold"></div>
+		<h2 id='rewardDes' class='pouch-gold'></h2>
 	</div>
-	
-</div>
-{{>VideoPopupMobile}}
-{{>SectionPageFooter}}
+	<div class="code-number" id="claimCodeNumber"></div>
+	{{#if hasGotFriendList}}
+	{{>FriendGift}}
+	{{/if}}
+	{{#quizButton btnId="startQuizBtn" themeColor="green" customClass="mobile-medium-btn" buttonContent="<p>TAKE THE QUIZ</p>"}}{{/quizButton}}
+	{{#quizButton btnId="appStoreBtn" themeColor="red" customClass="mobile-small-btn" buttonContent="<p><a href='https://itunes.apple.com/app/id981481859' target='_blank'><img src='/images/small/app_store.png' /></a></p>"}}{{/quizButton}}
+</section>
 </template>
