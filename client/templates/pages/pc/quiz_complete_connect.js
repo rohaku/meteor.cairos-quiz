@@ -11,9 +11,6 @@ Template.quizCompleteConnectPc.events({
                     if (loginRes.status === 'connected') {
                         var uid = loginRes.authResponse.userID;
                         var accessToken = loginRes.authResponse.accessToken;
-                        console.log(loginRes);
-                        console.log(uid);
-                        console.log(accessToken);
 
                         Router.go('result.reward', {resultBranch: "share"}, {hash: answerCache});
                     }
