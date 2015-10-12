@@ -3,5 +3,5 @@
  */
 
 Template.layoutPc.rendered = function(){
-    console.log("测试版本信息：1.0.1")
+    //console.log("测试版本信息：1.0.1")
 };
