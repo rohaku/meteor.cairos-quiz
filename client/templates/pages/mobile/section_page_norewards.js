@@ -1,9 +1,4 @@
-Template.SectionPageNorewardsMobile.events({
-    'click div#startQuizBtn': function(event){
-       Router.go('answer.do');
-    }
 
-});
 Template.SectionPageNorewardsMobile.rendered = function () {
     var urlHash = Base64.decode(Router.current().params.hash);
     var refferal = urlHash.split(_URL_SPLIT_WORDS_)[0];

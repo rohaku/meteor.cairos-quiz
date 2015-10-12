@@ -1,7 +1,4 @@
 Template.SectionPageResultPc.events({
-    'click div#startQuizBtn': function(event){
-       Router.go('answer.do');
-    },
 
     'click div#claimRewardBtn': function(event){
         var routerHash = $("#resultHashCache").data("resultCacheHash");

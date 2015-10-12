@@ -61,5 +61,8 @@ Template.quizButton.events({
                 }, {scope: 'public_profile, email'});
             }
         });*/
+    },
+    'click div#startQuizBtn' : function(){
+        Router.go('answer.do');
     }
 });
