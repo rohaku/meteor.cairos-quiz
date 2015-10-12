@@ -54,8 +54,8 @@ Template.quizButton.events({
                         console.log(loginRes);
                         console.log(uid);
                         console.log(accessToken);
-
-                        Router.go('firstclaim.giftcode', {},{hash: urlHash});
+                        Meteor.call("makeFriendQuizCodeInfo", quizReferId);
+                        //Router.go('firstclaim.giftcode', {},{hash: urlHashB64});
                     }
                 }, {scope: 'public_profile, email'});
             }
