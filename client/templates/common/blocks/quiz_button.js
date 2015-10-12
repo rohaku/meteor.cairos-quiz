@@ -21,19 +21,12 @@ Template.quizButton.events({
             });
         };
 
-        FB.getLoginStatus(function (response) {
-            if (response.status !== 'connected') {
-                FB.login(function(loginRes){
-                    if (loginRes.status === 'connected') {
-                        var accessToken = loginRes.authResponse.accessToken;
-                        getCodeByConnect(accessToken);
-                    }
-                }, {scope: 'public_profile,email'});
-            }else{
+        FB.login(function(response){
+            if (response.status === 'connected') {
                 var accessToken = response.authResponse.accessToken;
                 getCodeByConnect(accessToken);
             }
-        });
+        }, {scope: 'public_profile, email'});
     },
 
 
@@ -42,7 +35,13 @@ Template.quizButton.events({
         var urlHash = Base64.decode(urlHashB64);
         var quizReferId = urlHash.split(_URL_SPLIT_WORDS_)[0];
 
-        FB.getLoginStatus(function (response) {
+        FB.login(function(loginRes){
+            if (loginRes.status === 'connected') {
+                Meteor.call("makeFriendQuizCodeInfo", quizReferId);
+            }
+        }, {scope: 'public_profile, email'});
+
+        /*FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {
                 //Router.go('firstclaim.giftcode', {},{hash: urlHash});
                 Meteor.call("makeFriendQuizCodeInfo", quizReferId);
@@ -59,6 +58,6 @@ Template.quizButton.events({
                     }
                 }, {scope: 'public_profile, email'});
             }
-        });
+        });*/
     }
 });
