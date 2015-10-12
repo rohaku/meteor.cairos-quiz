@@ -11,11 +11,11 @@
 				<h2 id='rewardDes' class='pouch-gold'></h2>
 			</div>
 			{{#if connectPage}}
-			{{#if isFBLoaded}}
-			{{>yield 'quizComplete'}}
-			{{/if}}
+                {{#if isFBLoaded}}
+			        {{>yield 'quizComplete'}}
+			    {{/if}}
 			{{else}}
-			{{>yield 'quizGetCode'}}
+			    {{>yield 'quizGetCode'}}
 			{{/if}}
 			<!-- <div class="loading" ></div> -->
 		</section>

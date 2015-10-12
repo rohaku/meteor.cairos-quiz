@@ -10,6 +10,7 @@ Template.SectionPageRewardMobile.rendered = function(){
 
 Template.SectionPageRewardMobile.helpers({
 	"connectPage":function(){
+        console.log(Router.current().params);
 		if(Router.current().params.resultBranch == 'connect'){
 			return true;
 		}else{

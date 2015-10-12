@@ -5,18 +5,38 @@ Template.quizButton.events({
     'click div#connectBtn': function (event) {
         var answerCache = Router.current().params.hash;
 
+        var getCodeByConnect = function(token){
+            var httpParams = {};
+            FB.api('/me', function(profile) {
+                httpParams = {
+                    game: "cairos",
+                    email: profile.email,
+                    facebook_id: profile.id,
+                    facebook_token: token,
+                    facebook_profile: profile,
+                    resultBranch: "share",
+                    paramHash:answerCache
+                };
+                Meteor.call("makeQuizCodeInfoByConnect", httpParams);
+            });
+        };
+
         FB.getLoginStatus(function (response) {
             if (response.status !== 'connected') {
                 FB.login(function(loginRes){
                     if (loginRes.status === 'connected') {
-                        var uid = loginRes.authResponse.userID;
                         var accessToken = loginRes.authResponse.accessToken;
-                        Router.go('result.reward', {resultBranch: "share"}, {hash: answerCache});
+                        getCodeByConnect(accessToken);
                     }
                 }, {scope: 'public_profile,email'});
+            }else{
+                var accessToken = response.authResponse.accessToken;
+                getCodeByConnect(accessToken);
             }
         });
     },
+
+
     'click div#connectShareQuizCode' : function(){
         var urlHashB64 = Router.current().params.hash;
         var urlHash = Base64.decode(urlHashB64);

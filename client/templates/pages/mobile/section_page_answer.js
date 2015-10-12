@@ -36,20 +36,12 @@ Template.SectionPageAnswerMobile.rendered = function() {
 				});
 			}, 600);
 			
-			
-			if (ind == answerListData.length) {
+			//answerListData.length
+			if (ind == 2) {
 				var postParams = {
 					fbUserName: "",
 					totalScore: total
 				};
-
-				FB.getLoginStatus(function(response) {
-					if (response.status === 'connected') {
-						//console.log("you are logined")
-					} else {
-						//console.log("u are not login");
-					}
-				});
 
 				Meteor.call("getAnswerResult", postParams, function(error, result) {
 					if (error) {
