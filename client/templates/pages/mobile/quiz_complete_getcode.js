@@ -15,7 +15,7 @@ Template.quizCompleteGetCodeMobile.rendered = function(){
             }
         });
     } else {
-        //Router.go('quiz.home');
+        Router.go('quiz.home');
     }
 };
 
