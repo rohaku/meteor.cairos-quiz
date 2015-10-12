@@ -25,8 +25,10 @@ Template.quizButton.events({
             if (response.status === 'connected') {
                 var accessToken = response.authResponse.accessToken;
                 getCodeByConnect(accessToken);
+            }else{
+                alert("you need login fb");
             }
-        }, {scope: 'public_profile, email'});
+        }, {scope: 'public_profile,email'});
     },
 
 
@@ -39,7 +41,7 @@ Template.quizButton.events({
             if (loginRes.status === 'connected') {
                 Meteor.call("makeFriendQuizCodeInfo", quizReferId);
             }
-        }, {scope: 'public_profile, email'});
+        }, {scope: 'public_profile,email'});
 
         /*FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {

@@ -10,7 +10,6 @@ Template.SectionPageRewardPc.rendered = function(){
 
 Template.SectionPageRewardPc.helpers({
     "connectPage": function(){
-        console.log(Router.current().params);
         if(Router.current().params.resultBranch == "connect"){
             return true;
         }else{
