@@ -26,7 +26,7 @@ Template.SectionPageAnswerPc.rendered = function() {
 
 			setTimeout(function() {
 				lock = false;
-			}, 600);
+			}, 400);
 
 			$(this).addClass('active');
 			total += parseInt($(this).attr("value"));
@@ -34,14 +34,14 @@ Template.SectionPageAnswerPc.rendered = function() {
 
 			var $this = $(this);
 			setTimeout(function() {
-				$this.parents("section").fadeOut(500, function() {
+				$this.parents("section").fadeOut(350, function() {
 					$this.parents("section").next().fadeIn();
 					$this.parents('form').find('p').find('label').html(ind + 1);
 				});
-			}, 600);
+			}, 400);
 			
 			var lastIdx = answerListData.length; /*answerListData.length*/
-			if (ind == 2) {
+			if (ind == lastIdx) {
 				var postParams = {
 					fbUserName: "",
 					totalScore: total
