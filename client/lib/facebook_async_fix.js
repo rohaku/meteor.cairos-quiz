@@ -3,17 +3,11 @@
  */
 
 window.fbAsyncInit = function() {
-    //FB.init({
-    //    appId      : '1494613100852445',
-    //    xfbml      : true,
-    //    version    : 'v2.4'
-    //});
-
     // PRETTY USELESS ACTUALLY for mobile
     // fb login won't work on ios devices with local app id due to some strange cordova bugs
     // so it works only for in-browser development purposes
 
-    console.log('[window.fbAsyncInit] running with appId ' + FB_DEVELOPER_INFO.FB_APP_ID);
+    //console.log('[window.fbAsyncInit] running with appId ' + FB_DEVELOPER_INFO.FB_APP_ID);
 
     window.facebookInitStarted = true;
     FB.init({
@@ -24,7 +18,7 @@ window.fbAsyncInit = function() {
     FB.getLoginStatus(function(response){
         window.facebookInited = true;
         Session.set("isFBLoaded", true);
-        console.log("FB is defined");
+        //console.log("FB is defined");
     });
 };
 
