@@ -63,6 +63,8 @@
 	border: 2px solid #fff;
 	border-radius: 30px;
 	cursor: pointer;
+	text-align: left;
+	padding-left: 35px;
 }
 
 .mobile-container .main-content ul.option-part li.active{
