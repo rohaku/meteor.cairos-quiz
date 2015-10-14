@@ -47,6 +47,7 @@
 }
 .pc-container .cantent-wrap ul.option-part{
 	padding-bottom: 50px;
+	/* text-align: left; */
 }
 .pc-container .cantent-wrap ul.option-part li{
 	margin:10px auto;
@@ -60,6 +61,7 @@
 	border: 1px solid #fff;
 	border-radius: 30px;
 	cursor: pointer;
+	/* padding-left: 40px; */
 }
 
 .pc-container .cantent-wrap ul.option-part li:hover,.pc-container .cantent-wrap ul.option-part li.active{

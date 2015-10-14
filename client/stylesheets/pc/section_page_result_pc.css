@@ -84,6 +84,15 @@
 	text-align: center;
 }
 
+.pc-container .share-wrap .btn-content {
+	height: 280px;
+}
+
+.pc-container .share-wrap .btn-content span {
+	line-height: 90px;
+	letter-spacing: 4px;
+}
+
 .btn-content > div {
 	margin-bottom: 20px;
 }
