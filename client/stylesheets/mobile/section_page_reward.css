@@ -70,6 +70,10 @@
 	font-size: 3.5rem;
 	font-family: 'Arial';
 }
+.mobile-container .code-number span {
+	line-height: 90px;
+	letter-spacing: 4px;
+}
 .mobile-container .share-container{
 	height: 480px;
 }

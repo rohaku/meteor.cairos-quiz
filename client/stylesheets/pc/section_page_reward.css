@@ -60,6 +60,10 @@
 	font-size: 4rem;
 	font-family: 'Arial';
 }
+.pc-container .code-number span {
+	line-height: 90px;
+	letter-spacing: 4px;
+}
 .pc-container .connect-container p,.share-container p{
 	line-height: 32px;
 	font-size: 2rem;
